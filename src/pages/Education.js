@@ -1,8 +1,17 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 function Education() {
   return (
-    <div>Education</div>
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100vw",
+        backgroundColor: "purple"
+      }}
+    >
+      Education
+    </Box>
   )
 }
 

@@ -1,8 +1,15 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 function Home() {
   return (
-    <div>Home</div>
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100vw",
+        backgroundColor: "blue"
+      }}
+    >Home</Box>
   )
 }
 

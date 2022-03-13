@@ -6,12 +6,25 @@ function App() {
   return (
     <div>
       <Nav />
-      <Home />
-      <About />
-      <Work />
-      <Projects />
-      <Education />
-      <Contact />
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about" >
+        <About />
+      </section>
+      <section id="work">
+        <Work />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+
     </div>
   );
 }
