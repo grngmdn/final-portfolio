@@ -5,22 +5,25 @@ import {links} from "./Data"
 
 function Nav() {
   return (
-    <nav>
+    <nav className='sticky navbar'>
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
+          // border: "solid",
+          width: "100%"
         }}
       >
         <Box>
           logo
         </Box>
+        {/* looping the nav links (data.js) using map and displaying it in the page*/}
         <Box>
           {
             links.map(
               (link) => {
                 return(
-                  <Link href={link.url} key={link.id} sx={{color: "white", textDecoration: "none", padding: "5px"}}>
+                  <Link href={link.url} key={link.id} sx={{color: "white", textDecoration: "none", padding: "10px"}}>
                     {link.text}
                   </Link>
                 )

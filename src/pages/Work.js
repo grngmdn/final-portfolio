@@ -7,7 +7,7 @@ function Work() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "black"
+        backgroundColor: "#2e3440"
       }}
     >
       Work

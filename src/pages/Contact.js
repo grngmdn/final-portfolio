@@ -7,7 +7,7 @@ function Contact() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "pink"
+        backgroundColor: "#292E39"
       }}
     >
       Contact

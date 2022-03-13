@@ -7,7 +7,7 @@ function About() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "green"
+        backgroundColor: "#292E39"
       }}
     >
       About

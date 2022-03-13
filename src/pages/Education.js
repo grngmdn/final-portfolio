@@ -7,7 +7,7 @@ function Education() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "purple"
+        backgroundColor: "#2e3440"
       }}
     >
       Education

@@ -7,7 +7,7 @@ function Projects() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "gray"
+        backgroundColor: "#292E39"
       }}
     >
       Projects

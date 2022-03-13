@@ -3,8 +3,12 @@
   padding: 0;
 }
 
+/* Creates smooth scrolling animation.
+Leaves padding on top so the navigation does not cover the content  */
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5vh;
 }
 
 body {
@@ -12,3 +16,21 @@ body {
   color: #eceff4;
   font-family: Montserrat;
 }
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  height: 5vh;
+  background-color: #2e3440;
+  display: flex;
+  align-items: center;
+  /* border: solid; */
+}
+
+/* dark gray #2e3440;
+light gray #292E39 
+font white #ECEFF4
+*/
