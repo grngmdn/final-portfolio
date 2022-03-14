@@ -23,7 +23,7 @@ function Nav() {
             links.map(
               (link) => {
                 return(
-                  <Link href={link.url} key={link.id} sx={{color: "white", textDecoration: "none", padding: "10px"}}>
+                  <Link href={link.url} key={link.id} sx={{color: "white", textDecoration: "none", padding: "10px", "&:hover": {backgroundColor: "#444444", borderRadius: "10px"}}}>
                     {link.text}
                   </Link>
                 )

@@ -1,11 +1,13 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
+import DownloadIcon from '@mui/icons-material/Download';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 
 function Home() {
   return (
     <Box
       sx={{
-        height: "100vh",
+        height: "95vh",
         width: "100vw",
         backgroundColor: "#2e3440",
         display: "flex",
@@ -22,17 +24,25 @@ function Home() {
       </Typography>
       <Typography
         variant='h3'
-        sx={{padding: "10px 0 10px 0"}}
+        sx={{padding: "10px 0 0px 0"}}
       >
         I am a self taught React Developer
       </Typography>
       <Box
-        sx={{padding: "10px 0 50px 0"}}
+        sx={{padding: "40px 0 40px 0", display: "flex", justifyContent: "space-between", width: "100px"}}
       >
-        hyperlinks 
+        <Box>
+          <GitHub fontSize='large'/>
+        </Box>
+        <Box>
+          <LinkedIn fontSize='large'/>
+        </Box>
       </Box>
       <Button
         variant='contained'
+        sx={{color: "#2e3440", backgroundColor: "#88C0D0", height: "55px", borderRadius: "10px", fontWeight: "bold", "&:hover": {backgroundColor: "#6c99a6"}}}
+        size= "large"
+        startIcon={<DownloadIcon />}
       >
         Download Resume
       </Button>
@@ -40,4 +50,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home 
