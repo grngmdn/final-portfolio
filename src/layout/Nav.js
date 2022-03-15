@@ -11,14 +11,18 @@ function Nav() {
           display: "flex",
           justifyContent: "space-between",
           // border: "solid",
-          width: "100%"
+          width: "100%",
         }}
       >
-        <Box>
+        <Box
+          sx={{marginLeft: "50px"}}
+        >
           logo
         </Box>
         {/* looping the nav links (data.js) using map and displaying it in the page*/}
-        <Box>
+        <Box
+          sx={{marginRight: "50px"}}
+        >
           {
             links.map(
               (link) => {
