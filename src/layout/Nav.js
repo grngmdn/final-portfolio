@@ -17,7 +17,11 @@ function Nav() {
         <Box
           sx={{marginLeft: "50px"}}
         >
-          logo
+          <Link 
+            href='#home'
+            sx={{color: "white", textDecoration: "none"}}
+          >MG
+          </Link>
         </Box>
         {/* looping the nav links (data.js) using map and displaying it in the page*/}
         <Box

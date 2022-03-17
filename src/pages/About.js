@@ -22,8 +22,9 @@ function About() {
       >
         About Me
       </Typography>
-      <Box>
-        <img src='http://madangurung.com/img/profile.jpg'/>
+      <Box
+        className='display-photo'
+      >
       </Box>
       <Typography
         variant='h3'

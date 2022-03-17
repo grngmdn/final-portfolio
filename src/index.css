@@ -34,3 +34,32 @@ body {
 light gray #292E39 
 font white #ECEFF4
 */
+
+.display-photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  background-image: url('http://madangurung.com/img/profile.jpg');
+  background-position: top;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #88c0d0;
+  height: 12px;
+  width: 12px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 2px;
+  height: 400px;
+  background-color: #eceff4;
+}
+
+.line-education {
+  width: 2px;
+  height: 150px;
+  background-color: #eceff4;
+}
