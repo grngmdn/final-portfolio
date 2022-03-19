@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./layout/Footer";
 import Nav from "./layout/Nav"
 import {Home, About, Work, Projects, Education, Contact} from "./pages"
 
@@ -24,7 +25,7 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
-
+      <Footer />
     </div>
   );
 }

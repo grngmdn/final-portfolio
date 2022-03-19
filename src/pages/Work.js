@@ -8,11 +8,17 @@ function Work() {
         <Grid item xs={12}>
           <Box
             sx={{
-              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
               padding: "40px 0 120px 0"
             }}
           >
-            <h1>Recent Experiences</h1>
+            <Typography
+              variant='h4'
+              sx={{fontWeight: "bold"}}
+            >Recent Experiences</Typography>
+            <Box className='underline-work'></Box>
           </Box>
         </Grid>
         <Grid item xs={5}>

@@ -22,6 +22,7 @@ function About() {
       >
         About Me
       </Typography>
+      <Box className='underline-about'></Box>
       <Box
         className='display-photo'
       >
