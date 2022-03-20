@@ -83,3 +83,10 @@ font white #ECEFF4
   margin-top: 15px;
   background-color: #88c0d0;
 }
+.underline-projects {
+  height: 2px;
+  width: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #88c0d0;
+}
