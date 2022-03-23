@@ -24,8 +24,8 @@ function App() {
       </section>
       <section id="contact">
         <Contact />
+        <Footer />
       </section>
-      <Footer />
     </div>
   );
 }

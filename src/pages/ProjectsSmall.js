@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {projectData} from "./ProjectData"
 
 function ProjectsSmall() {
-  const [datas, setDatas] = useState(projectData)
 
-  const filteredData = datas.filter(
+  const filteredData = projectData.filter(
     (data) => {
-      if(data.type == "small"){
-        return data
-      }
+      return data.type === "small"
     }
   )
 
   return (
-    <div>
+    <div className='project-container'>
       {
         filteredData.map(
           (data) => {
             return(
-              <div key={data.id}>
+              <div key={data.id} className="project-img-container" >
                 <a  href={data.url} target="_blank" rel="noopener noreferrer">
-                  {data.text}
+                  <div style={{backgroundImage: "url(" + "data.img" +")", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}></div>
+                  <div className='text-bar'>
+                    <h2>{data.text}</h2>
+                  </div>
                 </a>
               </div>
             )

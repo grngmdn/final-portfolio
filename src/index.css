@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-  height: 5vh;
+  height: 6vh;
   background-color: #2e3440;
   display: flex;
   align-items: center;
@@ -37,12 +37,13 @@ font white #ECEFF4
 
 .display-photo {
   border-radius: 50%;
-  overflow: hidden;
   width: 200px;
   height: 200px;
   background-image: url('http://madangurung.com/img/profile.jpg');
   background-position: top;
   margin: 50px 0 50px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .circle {
@@ -89,4 +90,35 @@ font white #ECEFF4
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #88c0d0;
+}
+
+.project-container {
+  /* border: solid; */
+  width: 100vw;
+  /* min-height: 70vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-img-container {
+  height: 300px;
+  border: solid;
+  width: 500px;
+  margin: 10px;
+}
+
+.text-bar {
+  height: 55px;
+  width: 400px;
+  background-color: #eceff4;
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img-container a {
+  text-decoration: none;
+  color: black;
 }

@@ -1,28 +1,29 @@
-import React, {useState} from 'react'
+import { Grid } from '@mui/material'
+import React from 'react'
 import {projectData} from "./ProjectData"
 
 
 function ProjectsLarge() {
-  const [datas, setDatas] = useState(projectData)
 
-  const filteredData = datas.filter(
+  const filteredData = projectData.filter(
     (data) => {
-      if(data.type == "large"){
-        return data
-      }
+      return data.type === "large"
     }
   )
 
   return (
-    <div>
+    <div className='project-container'>
       {
         filteredData.map(
           (data) => {
             return(
-              <div key={data.id}>
-                <a  href={data.url} target="_blank" rel="noopener noreferrer">
-                  {data.text}
-                </a>
+              <div key={data.id} className="project-img-container">
+                    <a  href={data.url} target="_blank" rel="noopener noreferrer">
+                    <img src={data.img} width="400px" />
+                    <div className='text-bar'>
+                      <h2>{data.text}</h2>
+                    </div>                    
+                    </a>
               </div>
             )
           }

@@ -2,8 +2,24 @@ import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 function Work() {
+
+  const styling = {
+    lineSeperator: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "start",
+      // border: "solid"
+    }
+  }
+
   return (
-    <Box>
+    <Box
+      sx={{
+        // border: "solid",
+        marginBottom: "50px"
+      }}
+    >
       <Grid container spacing={1}>
         <Grid item xs={12}>
           <Box
@@ -32,13 +48,7 @@ function Work() {
         </Grid>
         <Grid item xs={2}>
           <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "start",
-              // height: "800px"
-            }}
+            sx={styling.lineSeperator}
           >
             <Box className='circle'></Box>
             <Box className='line'></Box>
@@ -66,13 +76,7 @@ function Work() {
         </Grid>
         <Grid item xs={2}>
           <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line'></Box>
@@ -98,13 +102,7 @@ function Work() {
         </Grid>
         <Grid item xs={2}>
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line'></Box>

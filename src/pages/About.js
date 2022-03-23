@@ -46,7 +46,7 @@ function About() {
         sx={{
           padding: "0 0 50px 0",
           textAlign: "center",
-          width: "95%"
+          maxWidth: "900px"
         }}
       >
         Dynamic and motivated System DBA and Front-End Developer with vast IT experience. Skilled in maintaining databases, front-end development, analytical thinking, and creative problem-solving. Adaptable and transformational team player with an ability to work independently and a willingness to go the extra mile.
@@ -135,7 +135,8 @@ function About() {
 
           <Box
             sx={{
-              display: "flex"
+              display: "flex",
+              padding: "10px"
             }}
           >
             <Box

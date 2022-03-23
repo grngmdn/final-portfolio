@@ -2,8 +2,24 @@ import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 function Education() {
+
+  const styling = {
+    lineSeperator: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "start",
+      // border: "solid"
+    }
+  }
+
   return (
-    <Box>
+    <Box
+      sx={{
+        // border: "solid",
+        marginBottom: "50px"
+      }}
+    >
       <Grid container spacing={1.5}>
         <Grid item xs={12}>
           <Box
@@ -12,7 +28,8 @@ function Education() {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              // border: "solid"
             }}
           >
             {/* Heading  */}
@@ -37,13 +54,7 @@ function Education() {
         </Grid>
         <Grid item xs={2}>
           <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "start",
-              // height: "800px"
-            }}
+            sx={styling.lineSeperator}
           >
             <Box className='circle'></Box>
             <Box className='line-education'></Box>
@@ -84,13 +95,7 @@ function Education() {
         </Grid>
         <Grid item xs={2}>
           <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line-education'></Box>
@@ -121,13 +126,7 @@ function Education() {
         </Grid>
         <Grid item xs={2}>
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line-education'></Box>
@@ -162,13 +161,7 @@ function Education() {
         </Grid>
         <Grid item xs={2}>
           <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line-education'></Box>
@@ -199,13 +192,7 @@ function Education() {
         </Grid>
         <Grid item xs={2}>
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "start",
-                // height: "800px"
-              }}
+            sx={styling.lineSeperator}
             >
               <Box className='circle'></Box>
               <Box className='line-education'></Box>

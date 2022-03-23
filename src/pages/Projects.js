@@ -1,27 +1,33 @@
-import { Box, Button, Link, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import ProjectsSmall from "./ProjectsSmall"
 import ProjectsLarge from "./ProjectsLarge"
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
 
 function Projects() {
 
   const [project, setProject] = useState(0)
 
+  const styling = {
+    buttonStyles: {
+      color: "#2e3440", 
+      backgroundColor: "#88C0D0", 
+      height: "55px", 
+      borderRadius: "10px", 
+      fontWeight: "bold", 
+      "&:hover": {backgroundColor: "#6c99a6"}
+    }
+  }
+
   return (
     <Box
       sx={{
-        height: "100vh",
+        // height: "100vh",
         width: "100vw",
         backgroundColor: "#292E39",
         padding: "40px 0 120px 0",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        // justifyContent: "center",
         alignItems: "center"
       }}
     >
@@ -34,14 +40,18 @@ function Projects() {
       <Box className='underline-projects'></Box>
       <Box
         sx={{
-          padding: "20px 0 20px 0",
+          padding: "40px 0 20px 0",
           display: "flex",
           // border: "solid",
-          width: "15%",
+          width: "35%",
           justifyContent: "space-evenly"
         }}
       >
         <Button
+          sx={
+            styling.buttonStyles
+          }
+          size= "large"
           onClick={
             () => {
               setProject(0)
@@ -49,9 +59,13 @@ function Projects() {
           }
           variant= "contained"
         >
-          small
+          small projects
         </Button>
         <Button
+          sx={
+            styling.buttonStyles
+          }
+          size= "large"
           onClick={
             () => {
               setProject(1)
@@ -59,7 +73,7 @@ function Projects() {
           }
           variant= "contained"
         >
-          large
+          large projects
         </Button>
       </Box>
       

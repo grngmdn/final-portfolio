@@ -32,9 +32,6 @@ function Home() {
         sx={{padding: "40px 0 40px 0", display: "flex", justifyContent: "space-between", width: "100px"}}
       >
         <Box
-            sx={{
-              "&:hover": {backgroundColor: "#88C0D0", borderRadius: "50px"},
-            }}
         >
           <Link
             href='#'
@@ -44,9 +41,6 @@ function Home() {
           </Link>
         </Box>
         <Box
-            sx={{
-              "&:hover": {backgroundColor: "#88C0D0", borderRadius: "50px"},
-            }}
         >
           <Link
             href='#'
