@@ -13,7 +13,8 @@ function Home() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        // border: "solid"
       }}
     >
       <Typography
@@ -22,12 +23,17 @@ function Home() {
       >
         Greetings
       </Typography>
-      <Typography
-        variant='h3'
-        sx={{padding: "10px 0 0px 0", fontWeight: "bold"}}
-      >
-        I am a self taught React Developer
-      </Typography>
+      
+      <Box className='typing-slider'>
+        <Typography
+          className="typing-demo"
+          variant='h3'
+          sx={{padding: "10px 0 0px 0", fontWeight: "bold"}}
+        >
+          I am a self taught Junior React Developer.
+        </Typography>
+      </Box>
+
       <Box
         sx={{padding: "40px 0 40px 0", display: "flex", justifyContent: "space-between", width: "100px"}}
       >

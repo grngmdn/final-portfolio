@@ -115,7 +115,6 @@ function Contact() {
           <TextField 
             label="Name"
             variant='filled'
-            focused
             sx={{
               width: "40%",
               // margin: "20px",
@@ -125,7 +124,6 @@ function Contact() {
           <TextField 
             label="Email"
             variant='filled'
-            focused
             sx={{
               width: "50%"
             }}
@@ -133,7 +131,6 @@ function Contact() {
           <TextField 
             label="Subject"
             variant='filled'
-            focused
             sx={{
               width: "94%"
             }}
@@ -142,10 +139,10 @@ function Contact() {
             label="Message"
             multiline
             maxRows={4}
-            focused
             variant='filled'
             sx={{
-              width: "94%"
+              width: "94%",
+              color: 'red'
             }}
 
           />

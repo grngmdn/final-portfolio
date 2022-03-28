@@ -57,7 +57,7 @@ function Projects() {
               setProject(0)
             }
           }
-          variant= "contained"
+          // variant= "contained"
         >
           small projects
         </Button>
@@ -71,7 +71,7 @@ function Projects() {
               setProject(1)
             }
           }
-          variant= "contained"
+          // variant= "outlined"
         >
           large projects
         </Button>

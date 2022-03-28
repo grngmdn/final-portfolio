@@ -49,7 +49,7 @@ function Education() {
           >
             <Typography
               sx={{color: "#9e9e9e"}}
-            >2016-2017</Typography>
+            >2017-2018</Typography>
           </Box>
         </Grid>
         <Grid item xs={2}>

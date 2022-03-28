@@ -57,7 +57,7 @@ font white #ECEFF4
 
 .line {
   width: 2px;
-  height: 400px;
+  height: 600px;
   background-color: #eceff4;
 }
 
@@ -122,4 +122,83 @@ font white #ECEFF4
 .project-img-container a {
   text-decoration: none;
   color: black;
+}
+
+.work-line {
+  background-color: #9e9e9e;
+  width: 135px;
+  height: 0.5px;
+  margin: 10px 0 10px 0;
+}
+
+.work-line-opposite {
+  background-color: #9e9e9e;
+  width: 135px;
+  height: 0.5px;
+  margin: 10px 0 10px 338px;
+}
+
+.card-container {
+  height: 230px;
+  width: 300px;
+  background-color: antiquewhite;
+}
+
+.card-footer {
+  height: 30px;
+  width: 30px;
+  background-color: #2e3440;
+}
+
+.card-outer {
+  transition: 0.3s;
+  width: 300px;
+  background-color: #88c0d0;
+  border-radius: 5px;
+}
+
+.card-outer a {
+  text-decoration: none;
+}
+
+.container-inner {
+  padding: 10px 10px;
+  color: #2e3440;
+}
+
+.container-inner p {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* home page animation  */
+
+/* .wrapper {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.typing-demo {
+  width: 33ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

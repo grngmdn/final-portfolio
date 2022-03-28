@@ -1,5 +1,11 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { FaBootstrap, FaCss3, FaHtml5, FaPhotoVideo, FaReact, FaSass } from "react-icons/fa";
+import himalayan from "../img/himalayan_thumbnail.jpeg"
+import rts from "../img/rts_thumbnail.jpeg"
+import tsc from "../img/tsc_thumbnail.jpeg"
+import { SiMaterialui } from "react-icons/si";
+
 
 function Work() {
 
@@ -9,6 +15,28 @@ function Work() {
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "start",
+      // border: "solid"
+    },
+    iconContainer: {
+      borderTop: "0.5px solid #9e9e9e",
+      borderBottom: "0.5px solid #9e9e9e",
+      width: "300px",
+      padding: "10px 0 10px 0",
+      // border: "solid"
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      justifyContent: "flex-start",
+    },
+    iconContainerRight: {
+      borderTop: "0.5px solid #9e9e9e",
+      borderBottom: "0.5px solid #9e9e9e",
+      width: "300px",
+      padding: "10px 0 10px 0",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-end",
+      justifyContent: "flex-end",
       // border: "solid"
     }
   }
@@ -43,7 +71,9 @@ function Work() {
               textAlign: "right"
             }}
           >
-            <h5>Aug 2021 — Present</h5>
+            <Typography
+              sx={{color: "#9e9e9e"}}
+            >2022</Typography>
           </Box>
         </Grid>
         <Grid item xs={2}>
@@ -55,23 +85,76 @@ function Work() {
           </Box>
         </Grid>
         <Grid item xs={5} >
-          <Box
-          >
-              <h2>Programmer (Database Management System)</h2>
-              <h3>EDPS Limited | Outsourced to Hospital Authority</h3>
-              <h3>Participate in conducting internal knowledge sharing session.</h3>
-              <h3>Initiate and maintain a CMS to manage internal training materials, guidelines and documentations.</h3>
-              <h3>Design and develop a database health check system to facilitate SRE.</h3>
-              <h3>Support and guide application teams on MySQL deployment and maintenance.</h3>
+          <Box sx={{width: "90%"}}>
+            <div className="card-outer">
+              <a href='https://www.newhimalayancottage.com/'>
+                <img 
+                      src={himalayan}
+                      width= "100%"
+                />
+                <div className="container-inner">
+                  <p>newhimalayancottage.com</p> 
+                </div>
+              </a>
+            </div><br />
+            <Typography variant='p'>WEB DEVELOPER</Typography>
+            <Typography
+              variant='body1'
+              sx={{
+                color: "#88c0d0"
+              }}
+            >Building a website for a small family owned hotel in Annapurna trekking region of Nepal.
+            </Typography><br />
+            <Box sx={styling.iconContainer}>
+              <Typography
+                variant='button'
+                className='typo'
+              >Technology used
+              </Typography><br />
+              <Box sx={{display: "flex", gap: "5px"}}>
+                  <FaHtml5 size={42}/>
+                  <FaCss3 size={42}/>
+                  <FaReact size={42}/>
+                  <SiMaterialui size={42}/>
+              </Box>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={5}>
           <Box
-            sx={{textAlign: "right"}}
+            sx={{textAlign: "right", display: "flex", flexDirection: "column", alignItems: "flex-end"}}
           >
-              <h2>Programmer (Database Management System)</h2>
-              <h3>EDPS Limited | Outsourced to Hospital Authority</h3>
-              <h3>Participate in conducting internal knowledge sharing session.</h3>   
+            <div className="card-outer">
+              <a href='http://readingtamusamajuk.com/'>
+                <img 
+                      src={rts}
+                      width= "100%"
+                />
+                <div className="container-inner">
+                  <p>readingtamusamajuk.com</p> 
+                </div>
+              </a>
+            </div><br />
+            <Typography variant='p'>WEB DEVELOPER</Typography>
+            <Typography
+              variant='body1'
+              sx={{
+                color: "#88c0d0"
+              }}
+            >Building a website for a non-profit organization. (Local Nepalese community in Reading)
+            </Typography><br />
+            <Box sx={styling.iconContainerRight}>
+              <Typography
+                variant='button'
+                className='typo'
+              >Technology used
+              </Typography><br />
+              <Box>
+                  <FaHtml5 size={42}/>
+                  <FaCss3 size={42}/>
+                  <FaBootstrap size={42}/>
+              </Box>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={2}>
@@ -88,7 +171,9 @@ function Work() {
               textAlign: "left"
             }}
           >
-            <h5>Jul 2019 — Aug 2021</h5>
+            <Typography
+              sx={{color: "#9e9e9e"}}
+            >2020</Typography>
           </Box>
         </Grid>
         <Grid item xs={5}>
@@ -97,7 +182,9 @@ function Work() {
               textAlign: "right"
             }}
           >
-            <p>Jun 2018 — Aug 2018</p>
+            <Typography
+              sx={{color: "#9e9e9e"}}
+            >2019</Typography>
           </Box>
         </Grid>
         <Grid item xs={2}>
@@ -109,13 +196,39 @@ function Work() {
             </Box>
         </Grid>
         <Grid item xs={5}>
-          <Box
-            sx={{textAlign: "left"}}
-          >
-              <h2>Summer Internship (Software Development)</h2>
-              <h3>EDPS Limited | Outsourced to Hospital Authority</h3>
-              <h3>Participate in conducting internal knowledge sharing session.</h3>   
-          </Box>        
+          <Box sx={{width: "90%"}}>
+            <div className="card-outer">
+              <a href='http://tscltd.co.uk/'>
+                <img 
+                      src={tsc}
+                      width= "100%"
+                />
+                <div className="container-inner">
+                  <p>tscltd.co.uk</p> 
+                </div>
+              </a>
+            </div><br />
+            <Typography variant='p'>WEB DEVELOPER</Typography>
+            <Typography
+              variant='body1'
+              sx={{
+                color: "#88c0d0"
+              }}
+            >Building a website for a security service company.
+            </Typography><br />
+            <Box sx={styling.iconContainer}>
+              <Typography
+                variant='button'
+                className='typo'
+              >Technology used
+              </Typography><br />
+              <Box>
+                  <FaHtml5 size={42}/>
+                  <FaCss3 size={42}/>
+                  <FaBootstrap size={42}/>
+              </Box>
+            </Box>
+          </Box>      
         </Grid>
       </Grid>
     </Box>
@@ -123,3 +236,4 @@ function Work() {
 }
 
 export default Work
+
