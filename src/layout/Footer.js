@@ -25,13 +25,13 @@ function Footer() {
             }}
         >
           <Link
-            href='#'
+            href='https://github.com/grngmdn'
             color= "#ECEFF4"
           >
             <GitHub fontSize='large' />
           </Link>
           <Link
-            href='#'
+            href='https://www.linkedin.com/in/madangurung'
             sx={{
               color: "#ECEFF4"
             }}

@@ -30,7 +30,7 @@ function Home() {
           variant='h3'
           sx={{padding: "10px 0 0px 0", fontWeight: "bold"}}
         >
-          I am a self taught Junior React Developer.
+          I am a <span className='home-text-blue'>self taught Junior React Developer.</span>
         </Typography>
       </Box>
 
@@ -40,7 +40,7 @@ function Home() {
         <Box
         >
           <Link
-            href='#'
+            href='https://github.com/grngmdn'
             color= "#ECEFF4"
           >
             <GitHub fontSize='large'/>
@@ -49,7 +49,7 @@ function Home() {
         <Box
         >
           <Link
-            href='#'
+            href='https://www.linkedin.com/in/madangurung'
             sx={{
               color: "#ECEFF4"
             }}

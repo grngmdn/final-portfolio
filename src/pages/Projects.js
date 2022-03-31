@@ -35,7 +35,7 @@ function Projects() {
       <Typography
         variant='h4'
         sx={{fontWeight: "bold"}}
-      >Projects
+      >Personal Projects
       </Typography>
       <Box className='underline-projects'></Box>
       <Box

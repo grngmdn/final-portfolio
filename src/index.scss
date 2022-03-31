@@ -1,3 +1,9 @@
+// color variables
+$dark-grey: #2e3440;
+$light-grey: #9e9e9e;
+$white-font: #eceff4;
+$blue-main: #88c0d0;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +19,12 @@ html {
 }
 
 body {
-  background-color: #2e3440;
-  color: #eceff4;
+  background-color: $dark-grey;
+  color: $white-font;
   font-family: Montserrat;
 }
 
+// navigation bar
 .sticky {
   position: sticky;
   top: 0;
@@ -25,17 +32,13 @@ body {
 
 .navbar {
   height: 6vh;
-  background-color: #2e3440;
+  background-color: $dark-grey;
   display: flex;
   align-items: center;
   /* border: solid; */
 }
 
-/* dark gray #2e3440;
-light gray #292E39 
-font white #ECEFF4
-*/
-
+// display profile picture
 .display-photo {
   border-radius: 50%;
   width: 200px;
@@ -47,9 +50,10 @@ font white #ECEFF4
   background-size: cover;
 }
 
+// middle line seperator
 .circle {
   border-radius: 50%;
-  background-color: #88c0d0;
+  background-color: $blue-main;
   height: 12px;
   width: 12px;
   margin-bottom: 10px;
@@ -58,39 +62,39 @@ font white #ECEFF4
 .line {
   width: 2px;
   height: 600px;
-  background-color: #eceff4;
+  background-color: $white-font;
 }
 
 .line-education {
   width: 2px;
   height: 150px;
-  background-color: #eceff4;
+  background-color: $white-font;
 }
 
 .underline-education {
   height: 2px;
   width: 60px;
   margin-top: 15px;
-  background-color: #88c0d0;
+  background-color: $blue-main;
 }
 .underline-work {
   height: 2px;
   width: 100px;
   margin-top: 15px;
-  background-color: #88c0d0;
+  background-color: $blue-main;
 }
 .underline-about {
   height: 2px;
   width: 60px;
   margin-top: 15px;
-  background-color: #88c0d0;
+  background-color: $blue-main;
 }
 .underline-projects {
   height: 2px;
   width: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #88c0d0;
+  background-color: $blue-main;
 }
 
 .project-container {
@@ -109,10 +113,11 @@ font white #ECEFF4
   margin: 10px;
 }
 
+// underline design of the page titles
 .text-bar {
   height: 55px;
   width: 400px;
-  background-color: #eceff4;
+  background-color: $white-font;
   /* border: solid; */
   display: flex;
   justify-content: center;
@@ -144,16 +149,17 @@ font white #ECEFF4
   background-color: antiquewhite;
 }
 
+// footer styles
 .card-footer {
   height: 30px;
   width: 30px;
-  background-color: #2e3440;
+  background-color: $dark-grey;
 }
 
 .card-outer {
   transition: 0.3s;
   width: 300px;
-  background-color: #88c0d0;
+  background-color: $blue-main;
   border-radius: 5px;
 }
 
@@ -163,7 +169,7 @@ font white #ECEFF4
 
 .container-inner {
   padding: 10px 10px;
-  color: #2e3440;
+  color: $dark-grey;
 }
 
 .container-inner p {
@@ -171,14 +177,11 @@ font white #ECEFF4
   text-align: center;
 }
 
-/* home page animation  */
+.home-text-blue {
+  color: $blue-main;
+}
 
-/* .wrapper {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+/* home page animation  */
 
 .typing-demo {
   width: 33ch;

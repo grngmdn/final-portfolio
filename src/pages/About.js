@@ -2,6 +2,17 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 function About() {
+
+  const styling ={
+    buttonStyles: {
+      border: "solid 1px",
+      borderRadius: "10px",
+      padding: "10px",
+      marginRight: "5px",
+      borderColor: "#88C0D0"
+    }
+  }
+
   return (
     <Box
       sx={{
@@ -49,7 +60,7 @@ function About() {
           maxWidth: "900px"
         }}
       >
-        Dynamic and motivated System DBA and Front-End Developer with vast IT experience. Skilled in maintaining databases, front-end development, analytical thinking, and creative problem-solving. Adaptable and transformational team player with an ability to work independently and a willingness to go the extra mile.
+        Computer Science graduate with passion to begin pursuing a lifelong career within the Information System Technology sector. Seeking to progress through to achieve goal of attaining a role as a Front-End web developer. Work well in a team without supervision and excel within fast-paced and challenging working environments.
       </Typography>
       <Typography
         variant='h6'
@@ -77,62 +88,31 @@ function About() {
             }}
           >
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               HTML
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               CSS
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
-              SASS
+              SCSS
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               REACT
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               CREATE REACT APP
             </Box>
           </Box>
-
-
           <Box
             sx={{
               display: "flex",
@@ -140,52 +120,36 @@ function About() {
             }}
           >
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               TAILWIND CSS
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               MATERIAL UI
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
+            >
+              PHOTOSHOP
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              FIGMA
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
             >
               GIT
             </Box>
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               GITHUB
             </Box>
           </Box>
-
-
-
           <Box
             sx={{
               display: "flex",
@@ -195,29 +159,41 @@ function About() {
             }}
           >
             <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                marginRight: "5px",
-                borderColor: "#88C0D0"
-              }}
-            >
-              PHOTOSHOP
-            </Box>
-            <Box
-              sx={{
-                border: "solid 1px",
-                borderRadius: "10px",
-                padding: "10px",
-                borderColor: "#88C0D0"
-              }}
+              sx={styling.buttonStyles}
             >
               NETLIFY
             </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              AXIOS
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              REST API
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              REDUX
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              REACT QUERY
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              FORMIK
+            </Box>
+            <Box
+              sx={styling.buttonStyles}
+            >
+              JEST
+            </Box>
           </Box>
-
-        
       </Box>      
     </Box>
   )

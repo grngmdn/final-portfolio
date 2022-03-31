@@ -141,7 +141,7 @@ function Work() {
               sx={{
                 color: "#88c0d0"
               }}
-            >Building a website for a non-profit organization. (Local Nepalese community in Reading)
+            >Building and maintaining website for a non-profit organization. (Local Nepalese community in Reading)
             </Typography><br />
             <Box sx={styling.iconContainerRight}>
               <Typography

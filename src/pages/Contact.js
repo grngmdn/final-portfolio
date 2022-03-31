@@ -4,6 +4,8 @@ import SendIcon from '@mui/icons-material/Send';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import PinDropIcon from '@mui/icons-material/PinDrop';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+
 
 function Contact() {
   return (
@@ -15,7 +17,7 @@ function Contact() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        padding: "40px 0 120px 0",
+        padding: "120px 0 120px 0",
         // border: "solid"
       }}
     >
@@ -96,7 +98,7 @@ function Contact() {
             </Typography>
           </Box>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             // border: "solid",
             display: "flex",
@@ -108,6 +110,8 @@ function Contact() {
             component="form"
             sx={{
               '& > :not(style)': { m: 2},
+              // border: "solid",
+              height: "500px"
             }}
             noValidate
             autoComplete="off"
@@ -117,34 +121,34 @@ function Contact() {
             variant='filled'
             sx={{
               width: "40%",
-              // margin: "20px",
-              color: "red"
+              backgroundColor: '#88c0d0'
             }}
           />
           <TextField 
             label="Email"
             variant='filled'
             sx={{
-              width: "50%"
+              width: "50%",
+              backgroundColor: '#88c0d0'
             }}
           />
           <TextField 
             label="Subject"
             variant='filled'
             sx={{
-              width: "94%"
+              width: "94%",
+              backgroundColor: '#88c0d0'
             }}
           />
           <TextField 
             label="Message"
             multiline
-            maxRows={4}
+            rows={8}
             variant='filled'
             sx={{
               width: "94%",
-              color: 'red'
+              backgroundColor: '#88c0d0'
             }}
-
           />
           <Button
             variant='contained'
@@ -153,8 +157,44 @@ function Contact() {
             endIcon={<SendIcon />}
           >Send Message</Button>
         </Box>
-        </Box>
+        </Box> */}
       </Box>
+
+
+
+        <Formik
+          initialValues={{ email: '', password: '' }}
+          validate={values => {
+            const errors = {};
+            if (!values.email) {
+              errors.email = 'Required';
+            } else if (
+              !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+            ) {
+              errors.email = 'Invalid email address';
+            }
+            return errors;
+          }}
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(() => {
+              alert(JSON.stringify(values, null, 2));
+              setSubmitting(false);
+            }, 400);
+          }}
+        >
+          {({ isSubmitting }) => (
+            <Form>
+              <Field type="email" name="email" />
+              <ErrorMessage name="email" component="div" />
+              <Field type="password" name="password" />
+              <ErrorMessage name="password" component="div" />
+              <button type="submit" disabled={isSubmitting}>
+                Submit
+              </button>
+            </Form>
+          )}
+        </Formik>
+
     </Box>
   )
 }
