@@ -1,5 +1,6 @@
 // color variables
 $dark-grey: #2e3440;
+$light-grey-main: #2e3440;
 $light-grey: #9e9e9e;
 $white-font: #eceff4;
 $blue-main: #88c0d0;
@@ -7,7 +8,6 @@ $blue-main: #88c0d0;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Creates smooth scrolling animation.
@@ -28,6 +28,7 @@ body {
 .sticky {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -153,7 +154,7 @@ body {
 .card-footer {
   height: 30px;
   width: 30px;
-  background-color: $dark-grey;
+  background-color: $light-grey-main;
 }
 
 .card-outer {
@@ -161,6 +162,10 @@ body {
   width: 300px;
   background-color: $blue-main;
   border-radius: 5px;
+}
+
+.card-outer:hover {
+  transform: scale(1.1);
 }
 
 .card-outer a {
@@ -179,6 +184,10 @@ body {
 
 .home-text-blue {
   color: $blue-main;
+}
+
+.error-text {
+  color: #dc143c;
 }
 
 /* home page animation  */
@@ -204,4 +213,163 @@ body {
   50% {
     border-color: transparent;
   }
+}
+
+section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+// custom shape divider
+// home
+.custom-shape-divider-bottom-1648784775 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1648784775 svg {
+  position: relative;
+  display: block;
+  width: calc(173% + 1.3px);
+  height: 92px;
+}
+
+.custom-shape-divider-bottom-1648784775 .shape-fill {
+  fill: #292e39;
+}
+
+// about
+.custom-shape-divider-bottom-1648782302 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1648782302 svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 73px;
+}
+
+.custom-shape-divider-bottom-1648782302 .shape-fill {
+  fill: #2e3440;
+}
+
+// work
+
+.custom-shape-divider-bottom-1648873921 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648873921 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 101px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1648873921 .shape-fill {
+  fill: #2e3440;
+}
+
+// projects
+.custom-shape-divider-bottom-1648873431 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1648873431 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 81px;
+}
+
+.custom-shape-divider-bottom-1648873431 .shape-fill {
+  fill: #292e39;
+}
+
+// education
+.custom-shape-divider-bottom-1648873246 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1648873246 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 112px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1648873246 .shape-fill {
+  fill: #292e39;
+}
+// contact
+.custom-shape-divider-bottom-1648872746 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648872746 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 72px;
+}
+
+.custom-shape-divider-bottom-1648872746 .shape-fill {
+  fill: #2e3440;
+}
+
+// footer
+.custom-shape-divider-bottom-1649041410 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1649041410 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
+}
+
+.custom-shape-divider-bottom-1649041410 .shape-fill {
+  fill: #2e3440;
 }
