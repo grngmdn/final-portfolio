@@ -3,7 +3,6 @@ import React from 'react';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import PinDropIcon from '@mui/icons-material/PinDrop';
-import ContactUsForm from './ContactUsForm';
 import ContactForm from './ContactForm';
 
 function Contact() {
@@ -29,8 +28,9 @@ function Contact() {
           display: 'flex',
           margin: '100px 0 0 0',
           // border: 'solid',
-          height: '75%',
+          height: '600px',
           width: '90%',
+          maxWidth: '1200px',
         }}
       >
         <Box
@@ -99,7 +99,6 @@ function Contact() {
             }}
           >
             <ContactForm />
-            {/* <ContactUsForm /> */}
           </Box>
         </Box>
       </Box>

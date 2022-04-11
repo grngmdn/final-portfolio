@@ -20,14 +20,17 @@ function Projects() {
   return (
     <Box
       sx={{
-        // height: "100vh",
+        // maxHeight: '100vh',
+        height: '200vh',
         width: '100vw',
         backgroundColor: '#292E39',
-        padding: '40px 0 120px 0',
+        // padding: '40px 0 120px 0',
         display: 'flex',
         flexDirection: 'column',
         // justifyContent: "center",
         alignItems: 'center',
+        border: 'solid',
+        // overflow: 'hidden',
       }}
     >
       {/* Heading  */}
@@ -39,9 +42,11 @@ function Projects() {
         sx={{
           padding: '40px 0 20px 0',
           display: 'flex',
-          // border: "solid",
+          // border: 'solid',
           width: '35%',
           justifyContent: 'space-evenly',
+          minWidth: '350px',
+          maxWidth: '500px',
         }}
       >
         <Button

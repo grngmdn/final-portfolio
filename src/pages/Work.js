@@ -48,10 +48,12 @@ function Work() {
 
   return (
     <Box
-      sx={{
-        // border: "solid",
-        marginBottom: '50px',
-      }}
+      sx={
+        {
+          // border: 'solid',
+          // marginBottom: '50px',
+        }
+      }
     >
       <Grid container spacing={1}>
         <Grid item xs={12}>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { Box, Button, Grid, TextField } from '@mui/material';
+import { Button, Grid, TextField } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import emailjs from '@emailjs/browser';
 
+// Yup validation for the form
 const validationSchema = Yup.object({
   name: Yup.string().required('This field is required'),
   email: Yup.string()
@@ -23,14 +25,26 @@ function ContactForm() {
         message: '',
       }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
-        console.log(values);
+      // using emailjs to send the email to the owner(me)
+
+      onSubmit={(values, formikHelpers) => {
+        emailjs
+          .send(
+            'service_3242rzg',
+            'template_xohc40r',
+            values,
+            'ZcVCNS4JKPMMTbFCB'
+          )
+          .then(() => {
+            formikHelpers.resetForm();
+            console.log(values);
+          });
       }}
     >
       {({ errors, touched }) => (
         <Form className='contact-form'>
           <Grid container spacing={4}>
-            <Grid item xs={12}>
+            <Grid item xs={5}>
               <Field
                 required
                 type='text'
@@ -54,7 +68,7 @@ function ContactForm() {
                 }
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={7}>
               <Field
                 required
                 type='email'
@@ -96,7 +110,7 @@ function ContactForm() {
                   ) : null
                 }
                 helperText={
-                  errors.email && touched.email ? (
+                  errors.subject && touched.subject ? (
                     <ErrorMessage name='subject' />
                   ) : null
                 }
