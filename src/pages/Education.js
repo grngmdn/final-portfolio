@@ -61,7 +61,7 @@ function Education() {
             <Typography variant='subtitle1' sx={{ color: '#88C0D0' }}>
               CITY UNIVERSITY LONDON
             </Typography>
-            <Typography variant='body1'>PG Certificate</Typography>
+            <Typography variant='body1'>Post Graduate Certificate</Typography>
           </Box>
         </Grid>
         <Grid item xs={5}>

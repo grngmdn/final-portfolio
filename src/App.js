@@ -5,15 +5,6 @@ import { Home, About, Work, Projects, Education, Contact } from './pages';
 import BackToTopButton from './component/BackToTopButton';
 
 function App() {
-  const scrolling = {
-    position: 'fixed',
-    bottom: 50,
-    right: 30,
-    cursor: 'pointer',
-    transitionDuration: '0.2s',
-    transitionTimingFunction: 'linear',
-    transitionDelay: '0s',
-  };
   return (
     <div>
       <Nav />
@@ -70,7 +61,7 @@ function App() {
       </section>
       <section id='projects' style={{ position: 'relative' }}>
         <Projects />
-        <div class='custom-shape-divider-bottom-1649639648'>
+        <div class='custom-shape-divider-bottom-1649646734'>
           <svg
             data-name='Layer 1'
             xmlns='http://www.w3.org/2000/svg'

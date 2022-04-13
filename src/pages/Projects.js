@@ -21,15 +21,15 @@ function Projects() {
     <Box
       sx={{
         // maxHeight: '100vh',
-        height: '200vh',
+        // height: '200vh',
         width: '100vw',
         backgroundColor: '#292E39',
-        // padding: '40px 0 120px 0',
+        padding: '50px 0 100px 0',
         display: 'flex',
         flexDirection: 'column',
         // justifyContent: "center",
         alignItems: 'center',
-        border: 'solid',
+        // border: 'solid',
         // overflow: 'hidden',
       }}
     >

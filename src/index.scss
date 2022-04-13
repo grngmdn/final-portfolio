@@ -286,24 +286,25 @@ section {
   fill: #292e39;
 }
 // projects
-.custom-shape-divider-bottom-1648873431 {
+.custom-shape-divider-bottom-1649646734 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1648873431 svg {
+.custom-shape-divider-bottom-1649646734 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 81px;
+  height: 33px;
 }
 
-.custom-shape-divider-bottom-1648873431 .shape-fill {
-  fill: #292e39;
+.custom-shape-divider-bottom-1649646734 .shape-fill {
+  fill: #2e3440;
 }
 
 // education

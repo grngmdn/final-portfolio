@@ -1,13 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
-import {
-  FaBootstrap,
-  FaCss3,
-  FaHtml5,
-  FaPhotoVideo,
-  FaReact,
-  FaSass,
-} from 'react-icons/fa';
+import { FaBootstrap, FaCss3, FaHtml5, FaReact } from 'react-icons/fa';
 import himalayan from '../img/himalayan_thumbnail.jpeg';
 import rts from '../img/rts_thumbnail.jpeg';
 import tsc from '../img/tsc_thumbnail.jpeg';
@@ -48,12 +41,10 @@ function Work() {
 
   return (
     <Box
-      sx={
-        {
-          // border: 'solid',
-          // marginBottom: '50px',
-        }
-      }
+      sx={{
+        // border: 'solid',
+        paddingBottom: '80px',
+      }}
     >
       <Grid container spacing={1}>
         <Grid item xs={12}>
