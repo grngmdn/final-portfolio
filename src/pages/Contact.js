@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -15,7 +15,7 @@ function Contact() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '120px 0 120px 0',
+        padding: '50px 0 120px 0',
         // border: 'solid',
       }}
     >
@@ -23,73 +23,48 @@ function Contact() {
         Get In Touch
       </Typography>
       <Box className='underline-about'></Box>
-      <Box
-        sx={{
-          display: 'flex',
-          margin: '100px 0 0 0',
-          // border: 'solid',
-          height: '600px',
-          width: '90%',
-          maxWidth: '1200px',
-        }}
-      >
-        <Box
-          sx={{
-            width: '50%',
-            textAlign: 'center',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            // border: 'solid',
-          }}
-        >
-          <Box sx={{ padding: '30px 0 30px 0' }}>
-            <PhoneIphoneIcon fontSize='large' />
-            <br />
-            <br />
-            <Typography variant='p' sx={{ color: '#88C0D0' }}>
-              Call Me On
-            </Typography>
-            <br />
-            <br />
-            <Typography>07456086580</Typography>
-          </Box>
-          <Box
-            sx={{
-              padding: '30px 0 30px 0',
-            }}
-          >
-            <EmailIcon fontSize='large' />
-            <br />
-            <br />
-            <Typography variant='p' sx={{ color: '#88C0D0' }}>
-              Email Me At
-            </Typography>
-            <br />
-            <br />
-            <Typography>gurungmadan@hotmail.com</Typography>
-          </Box>
-          <Box sx={{ padding: '30px 0 30px 0' }}>
-            <PinDropIcon fontSize='large' />
-            <br />
-            <br />
-            <Typography variant='p' sx={{ color: '#88C0D0' }}>
-              Find Me At
-            </Typography>
-            <br />
-            <br />
-            <Typography>Reading, UK</Typography>
-          </Box>
+      <Box className='contact-container'>
+        <Box className='contact-container-info'>
+          <Grid container spacing={3}>
+            <Grid item xs={4} sm={12}>
+              <Box>
+                <PhoneIphoneIcon fontSize='large' />
+                <br />
+                <br />
+                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                  Call Me On
+                </Typography>
+                <br />
+                <Typography>07456086580</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={4} sm={12}>
+              <Box>
+                <EmailIcon fontSize='large' />
+                <br />
+                <br />
+                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                  Email Me At
+                </Typography>
+                <br />
+                <Typography noWrap>gurungmadan@hotmail.com</Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={4} sm={12}>
+              <Box>
+                <PinDropIcon fontSize='large' />
+                <br />
+                <br />
+                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                  Find Me At
+                </Typography>
+                <br />
+                <Typography>Reading, UK</Typography>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
-        <Box
-          sx={{
-            // border: 'solid',
-            display: 'flex',
-            alignItems: 'center',
-            width: '100%',
-          }}
-        >
+        <Box className='contact-container-post'>
           <Box
             sx={{
               '& > :not(style)': { m: 2 },

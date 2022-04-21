@@ -1,0 +1,53 @@
+// color variables
+$dark-grey: #2e3440;
+$light-grey-main: #2e3440;
+$light-grey: #9e9e9e;
+$white-font: #eceff4;
+$blue-main: #88c0d0;
+
+// middle line and circle seperator (education and work page)
+.circle {
+  border-radius: 50%;
+  background-color: $blue-main;
+  height: 12px;
+  width: 12px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 2px;
+  height: 600px;
+  background-color: $white-font;
+}
+
+.line-education {
+  width: 2px;
+  height: 150px;
+  background-color: $white-font;
+}
+
+.underline-education {
+  height: 2px;
+  width: 60px;
+  margin-top: 15px;
+  background-color: $blue-main;
+}
+.underline-work {
+  height: 2px;
+  width: 100px;
+  margin-top: 15px;
+  background-color: $blue-main;
+}
+.underline-about {
+  height: 2px;
+  width: 60px;
+  margin-top: 15px;
+  background-color: $blue-main;
+}
+.underline-projects {
+  height: 2px;
+  width: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: $blue-main;
+}

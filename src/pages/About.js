@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 function About() {
@@ -9,21 +9,21 @@ function About() {
       padding: '10px',
       marginRight: '5px',
       borderColor: '#88C0D0',
+      textAlign: 'center',
     },
   };
 
   return (
     <Box
       sx={{
-        height: '100vh',
         width: '100vw',
         backgroundColor: '#292E39',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // padding: "50px 0 50px 0",
-        // border: "solid"
+        padding: '50px 0 150px 0',
+        // border: 'solid',
       }}
     >
       <Typography variant='h4' sx={{ fontWeight: 'bold' }}>
@@ -31,7 +31,7 @@ function About() {
       </Typography>
       <Box className='underline-about'></Box>
       <Box className='display-photo'></Box>
-      <Typography variant='h3' className='name-cover'>
+      <Typography variant='h3' textAlign='center' sx={{ maxWidth: '80%' }}>
         Hello! <span style={{ color: '#88C0D0' }}>I'm Madan Gurung.</span>
       </Typography>
       <Typography
@@ -47,7 +47,7 @@ function About() {
         sx={{
           padding: '0 0 50px 0',
           textAlign: 'center',
-          maxWidth: '900px',
+          maxWidth: '80%',
         }}
       >
         Computer Science graduate with passion to begin pursuing a lifelong
@@ -67,55 +67,87 @@ function About() {
       </Typography>
       <Box
         sx={{
-          // border: "solid 1px",
-          height: 'auto',
           width: '80%',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          maxWidth: '600px',
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            padding: '10px',
-          }}
-        >
-          <Box sx={styling.buttonStyles}>HTML</Box>
-          <Box sx={styling.buttonStyles}>CSS</Box>
-          <Box sx={styling.buttonStyles}>SCSS</Box>
-          <Box sx={styling.buttonStyles}>REACT</Box>
-          <Box sx={styling.buttonStyles}>CREATE REACT APP</Box>
-        </Box>
-        <Box
-          sx={{
-            display: 'flex',
-            padding: '10px',
-          }}
-        >
-          <Box sx={styling.buttonStyles}>TAILWIND CSS</Box>
-          <Box sx={styling.buttonStyles}>MATERIAL UI</Box>
-          <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
-          <Box sx={styling.buttonStyles}>FIGMA</Box>
-          <Box sx={styling.buttonStyles}>GIT</Box>
-          <Box sx={styling.buttonStyles}>GITHUB</Box>
-        </Box>
-        <Box
-          sx={{
-            display: 'flex',
-            padding: '10px',
-            marginRight: '5px',
-            borderColor: '#88C0D0',
-          }}
-        >
-          <Box sx={styling.buttonStyles}>NETLIFY</Box>
-          <Box sx={styling.buttonStyles}>AXIOS</Box>
-          <Box sx={styling.buttonStyles}>REST API</Box>
-          <Box sx={styling.buttonStyles}>REDUX</Box>
-          <Box sx={styling.buttonStyles}>REACT QUERY</Box>
-          <Box sx={styling.buttonStyles}>FORMIK</Box>
-          <Box sx={styling.buttonStyles}>JEST</Box>
-        </Box>
+        <Grid container spacing={0.8}>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>HTML</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>CSS</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>SCSS</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>REACT</Box>
+          </Grid>
+          <Grid item xs={4}>
+            {' '}
+            <Box sx={styling.buttonStyles}>CREATE REACT APP</Box>
+          </Grid>
+          <Grid item xs={4}>
+            {' '}
+            <Box sx={styling.buttonStyles}>TAILWIND CSS</Box>
+          </Grid>
+          <Grid item xs={4}>
+            {' '}
+            <Box sx={styling.buttonStyles}>MATERIAL UI</Box>
+          </Grid>
+          <Grid item xs={4}>
+            {' '}
+            <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>FIGMA</Box>
+          </Grid>
+          <Grid item xs={2}>
+            {' '}
+            <Box sx={styling.buttonStyles}>GIT</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>GITHUB</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>NETLIFY</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>AXIOS</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>REST API</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>REDUX</Box>
+          </Grid>
+          <Grid item xs={5}>
+            {' '}
+            <Box sx={styling.buttonStyles}>REACT QUERY</Box>
+          </Grid>
+          <Grid item xs={4}>
+            {' '}
+            <Box sx={styling.buttonStyles}>FORMIK</Box>
+          </Grid>
+          <Grid item xs={3}>
+            {' '}
+            <Box sx={styling.buttonStyles}>JEST</Box>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

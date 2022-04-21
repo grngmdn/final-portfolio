@@ -1,6 +1,5 @@
 import { Box, Link } from '@mui/material';
 import React from 'react';
-import DownloadIcon from '@mui/icons-material/Download';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 
 function Footer() {
@@ -11,7 +10,8 @@ function Footer() {
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        // position: 'relative',
+        // border: 'solid',
+        padding: '20px 0',
       }}
     >
       <h5>Copyright © 2022 Madan Gurung</h5>

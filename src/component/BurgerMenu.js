@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, ListItemIcon } from '@mui/material';
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
@@ -6,6 +6,14 @@ import { Divider } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { IconButton, Link, List, ListItem } from '@mui/material';
 import { links } from '../layout/Data';
+import {
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineRead,
+  AiOutlineContacts,
+  AiOutlineMail,
+  AiOutlineLaptop,
+} from 'react-icons/ai';
 
 function BurgerMenu() {
   const [open, setOpen] = useState(false);
@@ -15,7 +23,13 @@ function BurgerMenu() {
       {/* Hamburger menu and the links.
           Hamburger menu icon using mui icons.
       */}
-      <Box sx={{ display: { xs: 'block', md: 'none' }, marginRight: '50px' }}>
+      <Box
+        sx={{
+          display: { xs: 'block', md: 'none' },
+          marginRight: '15px',
+          // border: 'solid',
+        }}
+      >
         <IconButton>
           <MenuIcon onClick={() => setOpen(true)} sx={{ color: '#eceff4' }} />
         </IconButton>
@@ -31,7 +45,7 @@ function BurgerMenu() {
         PaperProps={{
           sx: {
             backgroundColor: '#2e3440',
-            width: '30vw',
+            width: '40vw',
           },
         }}
       >
@@ -54,22 +68,55 @@ function BurgerMenu() {
         <List>
           {links.map((link) => {
             return (
-              <ListItem>
-                <Link
-                  href={link.url}
-                  key={link.id}
+              <Link
+                href={link.url}
+                key={link.id}
+                sx={{
+                  textDecoration: 'none',
+                  color: '#eceff4',
+                }}
+              >
+                <ListItem
                   sx={{
-                    textDecoration: 'none',
-                    color: '#eceff4',
+                    padding: '20px',
                     '&:hover': {
                       backgroundColor: '#444444',
-                      borderRadius: '10px',
                     },
                   }}
                 >
+                  {link.text === 'Home' && (
+                    <ListItemIcon>
+                      <AiOutlineHome color='white' />
+                    </ListItemIcon>
+                  )}
+                  {link.text === 'About' && (
+                    <ListItemIcon>
+                      <AiOutlineContacts color='white' />
+                    </ListItemIcon>
+                  )}
+                  {link.text === 'Work' && (
+                    <ListItemIcon>
+                      <AiOutlineLaptop color='white' />
+                    </ListItemIcon>
+                  )}
+                  {link.text === 'Projects' && (
+                    <ListItemIcon>
+                      <AiOutlineFundProjectionScreen color='white' />
+                    </ListItemIcon>
+                  )}
+                  {link.text === 'Education' && (
+                    <ListItemIcon>
+                      <AiOutlineRead color='white' />
+                    </ListItemIcon>
+                  )}
+                  {link.text === 'Contact' && (
+                    <ListItemIcon>
+                      <AiOutlineMail color='white' />
+                    </ListItemIcon>
+                  )}
                   {link.text}
-                </Link>
-              </ListItem>
+                </ListItem>
+              </Link>
             );
           })}
         </List>

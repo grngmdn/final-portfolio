@@ -1,6 +1,6 @@
 import { Link } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useState } from 'react';
+import React from 'react';
 import { links } from './Data';
 import logo from '../img/logo.png';
 import BurgerMenu from '../component/BurgerMenu';

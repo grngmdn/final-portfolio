@@ -1,3 +1,8 @@
+@use './styling/custom-shape-divider';
+@use './styling/back-to-top-button';
+@use './styling/home-page-typing-animation';
+@use './styling/center-line-circle-seperator';
+
 // color variables
 $dark-grey: #2e3440;
 $light-grey-main: #2e3440;
@@ -35,12 +40,10 @@ body {
   height: 6vh;
   background-color: $dark-grey;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
   // border: solid;
 }
 
-// display profile picture
+// display profile picture on About page
 .display-photo {
   border-radius: 50%;
   width: 200px;
@@ -52,57 +55,9 @@ body {
   background-size: cover;
 }
 
-// middle line seperator
-.circle {
-  border-radius: 50%;
-  background-color: $blue-main;
-  height: 12px;
-  width: 12px;
-  margin-bottom: 10px;
-}
-
-.line {
-  width: 2px;
-  height: 600px;
-  background-color: $white-font;
-}
-
-.line-education {
-  width: 2px;
-  height: 150px;
-  background-color: $white-font;
-}
-
-.underline-education {
-  height: 2px;
-  width: 60px;
-  margin-top: 15px;
-  background-color: $blue-main;
-}
-.underline-work {
-  height: 2px;
-  width: 100px;
-  margin-top: 15px;
-  background-color: $blue-main;
-}
-.underline-about {
-  height: 2px;
-  width: 60px;
-  margin-top: 15px;
-  background-color: $blue-main;
-}
-.underline-projects {
-  height: 2px;
-  width: 60px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: $blue-main;
-}
-
 .project-container {
-  /* border: solid; */
-  width: 100vw;
-  /* min-height: 70vh; */
+  // border: solid;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -115,7 +70,7 @@ body {
   margin: 10px;
 }
 
-// underline design of the page titles
+// underline design for the page titles
 .text-bar {
   height: 55px;
   width: 400px;
@@ -191,203 +146,70 @@ body {
   color: #dc143c;
 }
 
-/* home page animation  */
-
-.typing-demo {
-  width: 33ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-  /* animation-iteration-count: infinite; */
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 section {
   width: 100vw;
   height: auto;
   position: relative;
 }
 
-// custom shape divider
-// home
-.custom-shape-divider-bottom-1648784775 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+// contact page
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  // border: solid black;
+  height: auto;
+  width: 90%;
+  max-width: 1200px;
+  padding: 0 0 20px 0;
+}
+
+.contact-container-info {
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // border: solid $white-font;
+  padding: 0 0 50px 0;
 }
 
-.custom-shape-divider-bottom-1648784775 svg {
-  position: relative;
-  display: block;
-  width: calc(173% + 1.3px);
-  height: 92px;
-}
-
-.custom-shape-divider-bottom-1648784775 .shape-fill {
-  fill: #292e39;
-}
-
-// about
-.custom-shape-divider-bottom-1648782302 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.contact-container-post {
+  // border: solid red;
+  display: flex;
+  align-items: center;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
 }
 
-.custom-shape-divider-bottom-1648782302 svg {
-  position: relative;
-  display: block;
-  width: calc(140% + 1.3px);
-  height: 73px;
-}
+// contact page desktop view
 
-.custom-shape-divider-bottom-1648782302 .shape-fill {
-  fill: #2e3440;
-}
+@media screen and (min-width: 600px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    // border: solid black;
+    height: 600px;
+    width: 90%;
+    max-width: 1200px;
+  }
 
-// work
-.custom-shape-divider-bottom-1649639648 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
+  .contact-container-info {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: solid $white-font;
+    padding: 0 10px 50px 10px;
+  }
 
-.custom-shape-divider-bottom-1649639648 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 33px;
-}
-
-.custom-shape-divider-bottom-1649639648 .shape-fill {
-  fill: #292e39;
-}
-// projects
-.custom-shape-divider-bottom-1649646734 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1649646734 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 33px;
-}
-
-.custom-shape-divider-bottom-1649646734 .shape-fill {
-  fill: #2e3440;
-}
-
-// education
-.custom-shape-divider-bottom-1648873246 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1648873246 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 112px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1648873246 .shape-fill {
-  fill: #292e39;
-}
-// contact
-.custom-shape-divider-bottom-1648872746 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1648872746 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 72px;
-}
-
-.custom-shape-divider-bottom-1648872746 .shape-fill {
-  fill: #2e3440;
-}
-
-// footer
-.custom-shape-divider-bottom-1649041410 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1649041410 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 49px;
-}
-
-.custom-shape-divider-bottom-1649041410 .shape-fill {
-  fill: #2e3440;
-}
-
-// back to top button
-.back-to-top-button {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  height: 50px;
-  width: 50px;
-  z-index: 2000;
-  cursor: pointer;
-  border-radius: 15px;
-  border: none;
-  color: #2e3440;
-  background-color: #88c0d0;
-}
-
-.back-to-top-button:hover {
-  filter: brightness(65%);
+  .contact-container-post {
+    // border: solid red;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }

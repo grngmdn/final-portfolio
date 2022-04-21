@@ -2,7 +2,6 @@ import { Box, Button, Link, Typography } from '@mui/material';
 import React from 'react';
 import DownloadIcon from '@mui/icons-material/Download';
 import { GitHub, LinkedIn } from '@mui/icons-material';
-import BackToTopButton from '../component/BackToTopButton';
 
 function Home() {
   return (
@@ -22,17 +21,17 @@ function Home() {
         Greetings
       </Typography>
 
-      <Box className='typing-slider'>
-        <Typography
-          className='typing-demo'
-          variant='h3'
-          sx={{ padding: '10px 0 0px 0', fontWeight: 'bold' }}
-        >
-          I am a{' '}
-          <span className='home-text-blue'>
-            self taught Junior React Developer.
-          </span>
-        </Typography>
+      <Box
+        sx={{
+          width: '90vw',
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <h1 className='typing-demo'>
+          I'm a self taught{' '}
+          <span className='home-text-blue'> React Developer.</span>
+        </h1>
       </Box>
 
       <Box

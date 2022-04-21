@@ -66,6 +66,7 @@ function Work() {
           <Box
             sx={{
               textAlign: 'right',
+              // border: 'solid',
             }}
           >
             <Typography sx={{ color: '#9e9e9e' }}>Most recent</Typography>

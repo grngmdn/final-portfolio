@@ -46,7 +46,7 @@ function Projects() {
           width: '35%',
           justifyContent: 'space-evenly',
           minWidth: '350px',
-          maxWidth: '500px',
+          maxWidth: '400px',
         }}
       >
         <Button
@@ -71,7 +71,9 @@ function Projects() {
         </Button>
       </Box>
 
-      <Box>{project === 0 ? <ProjectsSmall /> : <ProjectsLarge />}</Box>
+      <Box sx={{ width: '90%' }}>
+        {project === 0 ? <ProjectsSmall /> : <ProjectsLarge />}
+      </Box>
     </Box>
   );
 }
