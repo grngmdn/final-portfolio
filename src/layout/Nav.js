@@ -17,9 +17,10 @@ function Nav() {
           width: '100%',
         }}
       >
+        {/* Website logo  */}
         <Box
           sx={{
-            marginLeft: '50px',
+            marginLeft: '30px',
             // border: 'solid',
             display: 'flex',
             flexGrow: '1',

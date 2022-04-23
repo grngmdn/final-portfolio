@@ -1,7 +1,7 @@
 import { Box, Button, Link, Typography } from '@mui/material';
 import React from 'react';
 import DownloadIcon from '@mui/icons-material/Download';
-import { GitHub, LinkedIn } from '@mui/icons-material';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Home() {
   return (
@@ -26,6 +26,7 @@ function Home() {
           width: '90vw',
           display: 'flex',
           justifyContent: 'center',
+          // border: 'solid',
         }}
       >
         <h1 className='typing-demo'>
@@ -40,11 +41,12 @@ function Home() {
           display: 'flex',
           justifyContent: 'space-between',
           width: '100px',
+          // border: 'solid',
         }}
       >
         <Box>
           <Link href='https://github.com/grngmdn' color='#ECEFF4'>
-            <GitHub fontSize='large' />
+            <AiFillGithub fontSize='40px' />
           </Link>
         </Box>
         <Box>
@@ -54,7 +56,7 @@ function Home() {
               color: '#ECEFF4',
             }}
           >
-            <LinkedIn fontSize='large' />
+            <AiFillLinkedin fontSize='43px' />
           </Link>
         </Box>
       </Box>

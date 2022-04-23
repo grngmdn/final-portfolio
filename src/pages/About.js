@@ -31,11 +31,11 @@ function About() {
       </Typography>
       <Box className='underline-about'></Box>
       <Box className='display-photo'></Box>
-      <Typography variant='h3' textAlign='center' sx={{ maxWidth: '80%' }}>
+      <Typography variant='h4' textAlign='center' sx={{ maxWidth: '80%' }}>
         Hello! <span style={{ color: '#88C0D0' }}>I'm Madan Gurung.</span>
       </Typography>
       <Typography
-        variant='p'
+        variant='button'
         sx={{
           padding: '20px 0 20px 0',
         }}
@@ -93,7 +93,9 @@ function About() {
           </Grid>
           <Grid item xs={4}>
             {' '}
-            <Box sx={styling.buttonStyles}>CREATE REACT APP</Box>
+            <Box wrap sx={styling.buttonStyles}>
+              CREATE REACT APP
+            </Box>
           </Grid>
           <Grid item xs={4}>
             {' '}
@@ -105,11 +107,11 @@ function About() {
           </Grid>
           <Grid item xs={4}>
             {' '}
-            <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
+            <Box sx={styling.buttonStyles}>STYLED COMPONENTS</Box>
           </Grid>
           <Grid item xs={3}>
             {' '}
-            <Box sx={styling.buttonStyles}>FIGMA</Box>
+            <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
           </Grid>
           <Grid item xs={2}>
             {' '}

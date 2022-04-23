@@ -1,11 +1,17 @@
-import { Box, ListItemIcon } from '@mui/material';
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { Divider } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { IconButton, Link, List, ListItem } from '@mui/material';
 import { links } from '../layout/Data';
+import {
+  IconButton,
+  Link,
+  List,
+  ListItem,
+  Box,
+  ListItemIcon,
+} from '@mui/material';
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -26,13 +32,14 @@ function BurgerMenu() {
       <Box
         sx={{
           display: { xs: 'block', md: 'none' },
-          marginRight: '15px',
+          marginRight: '30px',
           // border: 'solid',
         }}
       >
-        <IconButton>
-          <MenuIcon onClick={() => setOpen(true)} sx={{ color: '#eceff4' }} />
-        </IconButton>
+        <MenuIcon
+          onClick={() => setOpen(true)}
+          sx={{ color: '#eceff4', cursor: 'pointer' }}
+        />
       </Box>
 
       {/* Swipeable drawer when the hamburger menu is opened  */}
@@ -54,7 +61,10 @@ function BurgerMenu() {
           <IconButton>
             <ChevronRightIcon
               onClick={() => setOpen(false)}
-              sx={{ color: '#eceff4' }}
+              sx={{
+                color: '#eceff4',
+                fontSize: '30px',
+              }}
             />
           </IconButton>
         </Box>
@@ -86,32 +96,35 @@ function BurgerMenu() {
                 >
                   {link.text === 'Home' && (
                     <ListItemIcon>
-                      <AiOutlineHome color='white' />
+                      <AiOutlineHome color='white' fontSize='25px' />
                     </ListItemIcon>
                   )}
                   {link.text === 'About' && (
                     <ListItemIcon>
-                      <AiOutlineContacts color='white' />
+                      <AiOutlineContacts color='white' fontSize='25px' />
                     </ListItemIcon>
                   )}
                   {link.text === 'Work' && (
                     <ListItemIcon>
-                      <AiOutlineLaptop color='white' />
+                      <AiOutlineLaptop color='white' fontSize='25px' />
                     </ListItemIcon>
                   )}
                   {link.text === 'Projects' && (
                     <ListItemIcon>
-                      <AiOutlineFundProjectionScreen color='white' />
+                      <AiOutlineFundProjectionScreen
+                        color='white'
+                        fontSize='25px'
+                      />
                     </ListItemIcon>
                   )}
                   {link.text === 'Education' && (
                     <ListItemIcon>
-                      <AiOutlineRead color='white' />
+                      <AiOutlineRead color='white' fontSize='25px' />
                     </ListItemIcon>
                   )}
                   {link.text === 'Contact' && (
                     <ListItemIcon>
-                      <AiOutlineMail color='white' />
+                      <AiOutlineMail color='white' fontSize='25px' />
                     </ListItemIcon>
                   )}
                   {link.text}

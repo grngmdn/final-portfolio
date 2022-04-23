@@ -1,6 +1,6 @@
-import { Box, Link } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
-import { GitHub, LinkedIn } from '@mui/icons-material';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Footer() {
   return (
@@ -14,7 +14,9 @@ function Footer() {
         padding: '20px 0',
       }}
     >
-      <h5>Copyright © 2022 Madan Gurung</h5>
+      <Typography variant='overline' sx={{ color: '#9e9e9e' }}>
+        Copyright © 2022 Madan Gurung
+      </Typography>
       <Box
         sx={{
           // border: "solid",
@@ -25,7 +27,7 @@ function Footer() {
         }}
       >
         <Link href='https://github.com/grngmdn' color='#ECEFF4'>
-          <GitHub fontSize='large' />
+          <AiFillGithub fontSize='27px' />
         </Link>
         <Link
           href='https://www.linkedin.com/in/madangurung'
@@ -33,7 +35,7 @@ function Footer() {
             color: '#ECEFF4',
           }}
         >
-          <LinkedIn fontSize='large' />
+          <AiFillLinkedin fontSize='30px' />
         </Link>
       </Box>
     </Box>

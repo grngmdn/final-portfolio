@@ -31,11 +31,11 @@ function Contact() {
                 <PhoneIphoneIcon fontSize='large' />
                 <br />
                 <br />
-                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                <Typography variant='button' sx={{ color: '#88C0D0' }}>
                   Call Me On
                 </Typography>
                 <br />
-                <Typography>07456086580</Typography>
+                <Typography variant='body1'>07456086580</Typography>
               </Box>
             </Grid>
             <Grid item xs={4} sm={12}>
@@ -43,11 +43,13 @@ function Contact() {
                 <EmailIcon fontSize='large' />
                 <br />
                 <br />
-                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                <Typography variant='button' sx={{ color: '#88C0D0' }}>
                   Email Me At
                 </Typography>
                 <br />
-                <Typography noWrap>gurungmadan@hotmail.com</Typography>
+                <Typography noWrap variant='body1'>
+                  gurungmadan@hotmail.com
+                </Typography>
               </Box>
             </Grid>
             <Grid item xs={4} sm={12}>
@@ -55,11 +57,11 @@ function Contact() {
                 <PinDropIcon fontSize='large' />
                 <br />
                 <br />
-                <Typography variant='p' sx={{ color: '#88C0D0' }}>
+                <Typography variant='button' sx={{ color: '#88C0D0' }}>
                   Find Me At
                 </Typography>
                 <br />
-                <Typography>Reading, UK</Typography>
+                <Typography variant='body1'>Reading, UK</Typography>
               </Box>
             </Grid>
           </Grid>
