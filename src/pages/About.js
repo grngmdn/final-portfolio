@@ -71,83 +71,144 @@ function About() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          maxWidth: '600px',
+          maxWidth: '900px',
         }}
       >
-        <Grid container spacing={0.8}>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>HTML</Box>
+        <Grid container spacing={10}>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Frontend</Typography>
+              </Grid>
+              <Grid item xs={4}>
+                <Box sx={styling.buttonStyles}>HTML</Box>
+              </Grid>
+              <Grid item xs={4}>
+                <Box sx={styling.buttonStyles}>CSS</Box>
+              </Grid>
+              <Grid item xs={4}>
+                <Box sx={styling.buttonStyles}>SCSS</Box>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>REACT</Box>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>CREATE REACT APP</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>CSS</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>React Styling</Typography>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>TAILWIND</Box>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>MUI</Box>
+              </Grid>
+              <Grid item xs={12}>
+                <Box sx={styling.buttonStyles}>STYLED COMPONENTS</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>SCSS</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>State Management</Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>REDUX</Box>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>REACT QUERY</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>REACT</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>API's</Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>AXIOS</Box>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>REST API</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            {' '}
-            <Box wrap sx={styling.buttonStyles}>
-              CREATE REACT APP
-            </Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>React Forms</Typography>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>FORMIK</Box>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>YUP</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            {' '}
-            <Box sx={styling.buttonStyles}>TAILWIND CSS</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Testing</Typography>
+              </Grid>
+              <Grid item xs={8}>
+                <Box sx={styling.buttonStyles}>REACT TESTING LIBRARY</Box>
+              </Grid>
+              <Grid item xs={4}>
+                <Box sx={styling.buttonStyles}>JEST</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            {' '}
-            <Box sx={styling.buttonStyles}>MATERIAL UI</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Database</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Box sx={styling.buttonStyles}>FIREBASE</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            {' '}
-            <Box sx={styling.buttonStyles}>STYLED COMPONENTS</Box>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Version Control</Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Box sx={styling.buttonStyles}>GIT</Box>
+              </Grid>
+              <Grid item xs={7}>
+                <Box sx={styling.buttonStyles}>GITHUB</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
+
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Image Editor</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={2}>
-            {' '}
-            <Box sx={styling.buttonStyles}>GIT</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>GITHUB</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>NETLIFY</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>AXIOS</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>REST API</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>REDUX</Box>
-          </Grid>
-          <Grid item xs={5}>
-            {' '}
-            <Box sx={styling.buttonStyles}>REACT QUERY</Box>
-          </Grid>
-          <Grid item xs={4}>
-            {' '}
-            <Box sx={styling.buttonStyles}>FORMIK</Box>
-          </Grid>
-          <Grid item xs={3}>
-            {' '}
-            <Box sx={styling.buttonStyles}>JEST</Box>
+
+          <Grid item xs={12} sm={6} lg={4}>
+            <Grid container spacing={1}>
+              <Grid item xs={12}>
+                <Typography>Cloud</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Box sx={styling.buttonStyles}>DOCKER</Box>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
