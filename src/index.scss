@@ -100,6 +100,21 @@ body {
   margin: 10px 0 10px 338px;
 }
 
+// text align left or right for the heading in "work" page depending on the screen size
+
+@media screen and (max-width: 900px) {
+  .work-text-align {
+    text-align: left;
+    margin-left: 17vw;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .work-text-align {
+    text-align: right;
+  }
+}
+
 .card-container {
   height: 230px;
   width: 300px;

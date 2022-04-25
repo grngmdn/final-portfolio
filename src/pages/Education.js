@@ -15,7 +15,7 @@ function Education() {
   return (
     <Box
       sx={{
-        // border: "solid",
+        // border: 'solid',
         // marginBottom: '50px',
         paddingBottom: '150px',
       }}
@@ -29,7 +29,7 @@ function Education() {
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
-              // border: "solid"
+              // border: 'solid',
             }}
           >
             {/* Heading  */}

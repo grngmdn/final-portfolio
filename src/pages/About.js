@@ -1,5 +1,15 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
+import {
+  AiFillGithub,
+  AiFillDatabase,
+  AiFillCloud,
+  AiOutlineForm,
+  AiFillApi,
+} from 'react-icons/ai';
+import { SiRedux, SiAdobephotoshop } from 'react-icons/si';
+import { GiLargePaintBrush, GiTestTubes } from 'react-icons/gi';
+import { CgWebsite } from 'react-icons/cg';
 
 function About() {
   const styling = {
@@ -77,136 +87,208 @@ function About() {
         <Grid container spacing={10}>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Frontend</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <CgWebsite fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Frontend</Typography>
               </Grid>
               <Grid item xs={4}>
-                <Box sx={styling.buttonStyles}>HTML</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>HTML</Typography>
+                </Box>
               </Grid>
               <Grid item xs={4}>
-                <Box sx={styling.buttonStyles}>CSS</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>CSS</Typography>
+                </Box>
               </Grid>
               <Grid item xs={4}>
-                <Box sx={styling.buttonStyles}>SCSS</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>SCSS</Typography>
+                </Box>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>REACT</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>REACT</Typography>
+                </Box>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>CREATE REACT APP</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>CREATE REACT APP</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>React Styling</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <GiLargePaintBrush fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Styling</Typography>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>TAILWIND</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>TAILWIND</Typography>
+                </Box>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>MUI</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>MUI</Typography>
+                </Box>
               </Grid>
               <Grid item xs={12}>
-                <Box sx={styling.buttonStyles}>STYLED COMPONENTS</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>STYLED COMPONENTS</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>State Management</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <SiRedux fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>State Management</Typography>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>REDUX</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>REDUX</Typography>
+                </Box>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>REACT QUERY</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>REACT QUERY</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>API's</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <AiFillApi fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>API</Typography>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>AXIOS</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>AXIOS</Typography>
+                </Box>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>REST API</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>REST API</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>React Forms</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <AiOutlineForm fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Forms</Typography>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>FORMIK</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>FORMIK</Typography>
+                </Box>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>YUP</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>YUP</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Testing</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <GiTestTubes fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Testing</Typography>
               </Grid>
               <Grid item xs={8}>
-                <Box sx={styling.buttonStyles}>REACT TESTING LIBRARY</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>REACT TESTING LIBRARY</Typography>
+                </Box>
               </Grid>
               <Grid item xs={4}>
-                <Box sx={styling.buttonStyles}>JEST</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>JEST</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Database</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <AiFillDatabase fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Database</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Box sx={styling.buttonStyles}>FIREBASE</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>FIREBASE</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Version Control</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <AiFillGithub fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Version Control</Typography>
               </Grid>
               <Grid item xs={5}>
-                <Box sx={styling.buttonStyles}>GIT</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>GIT</Typography>
+                </Box>
               </Grid>
               <Grid item xs={7}>
-                <Box sx={styling.buttonStyles}>GITHUB</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>GITHUB</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
 
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Image Editor</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <SiAdobephotoshop fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Image Editor</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Box sx={styling.buttonStyles}>PHOTOSHOP</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>PHOTOSHOP</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>
 
           <Grid item xs={12} sm={6} lg={4}>
             <Grid container spacing={1}>
-              <Grid item xs={12}>
-                <Typography>Cloud</Typography>
+              <Grid item xs={12} textAlign='center'>
+                <AiFillCloud fontSize={50} />
+              </Grid>
+              <Grid item xs={12} textAlign='center'>
+                <Typography variant='button'>Cloud</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Box sx={styling.buttonStyles}>DOCKER</Box>
+                <Box sx={styling.buttonStyles}>
+                  <Typography variant='body2'>DOCKER</Typography>
+                </Box>
               </Grid>
             </Grid>
           </Grid>

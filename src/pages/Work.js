@@ -62,12 +62,14 @@ function Work() {
             <Box className='underline-work'></Box>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} md={5}>
           <Box
-            sx={{
-              textAlign: 'right',
-              // border: 'solid',
-            }}
+            sx={
+              {
+                // border: 'solid',
+              }
+            }
+            className='work-text-align'
           >
             <Typography sx={{ color: '#9e9e9e' }}>Most recent</Typography>
           </Box>
@@ -78,7 +80,7 @@ function Work() {
             <Box className='line'></Box>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={10} md={5}>
           <Box sx={{ width: '90%' }}>
             <Box className='card-outer' sx={{ boxShadow: 10 }}>
               <a href='https://www.newhimalayancottage.com/'>
@@ -114,7 +116,7 @@ function Work() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={10} md={5}>
           <Box
             sx={{
               textAlign: 'right',
@@ -140,6 +142,7 @@ function Work() {
               }}
             >
               Building and maintaining website for a non-profit organization.
+              <br />
               (Local Nepalese community in Reading)
             </Typography>
             <br />
@@ -171,11 +174,14 @@ function Work() {
             <Typography sx={{ color: '#9e9e9e' }}></Typography>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} md={5}>
           <Box
-            sx={{
-              textAlign: 'right',
-            }}
+            sx={
+              {
+                // textAlign: 'right',
+              }
+            }
+            className='work-text-align'
           >
             <Typography sx={{ color: '#9e9e9e' }}>Oldest</Typography>
           </Box>
@@ -186,7 +192,7 @@ function Work() {
             <Box className='line'></Box>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={10} md={5}>
           <Box sx={{ width: '90%' }}>
             <Box sx={{ boxShadow: 10 }} className='card-outer'>
               <a href='http://tscltd.co.uk/'>
