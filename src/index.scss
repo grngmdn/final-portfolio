@@ -40,7 +40,54 @@ body {
   height: 8vh;
   background-color: $dark-grey;
   display: flex;
+  justify-content: center;
+  align-items: center;
   // border: solid;
+}
+
+// styling navigation links on larger screen
+.navlink-container {
+  .navlink-links {
+    color: #eceff4;
+    text-decoration: none;
+    padding: 10px;
+
+    &:hover {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+  }
+
+  .navlink-links-active {
+    color: #eceff4;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #444444;
+    border-radius: 10px;
+  }
+}
+
+// styling navigation links on mobile screen
+
+.navlink-mobile-list {
+  .navlink-mobile-link {
+    color: #eceff4;
+    text-decoration: none;
+  }
+}
+
+.navlink-mobile-link {
+  .navlink-mobile-listitem {
+    padding: 25px;
+
+    &:hover {
+      background-color: #444444;
+    }
+  }
+  .navlink-mobile-listitem-active {
+    padding: 25px;
+    background-color: #444444;
+  }
 }
 
 // display profile picture on About page
@@ -100,7 +147,7 @@ body {
   margin: 10px 0 10px 338px;
 }
 
-// text align left or right for the heading in "work" page depending on the screen size
+// text align left or right for the heading in "work" and "education" page depending on the screen size
 
 @media screen and (max-width: 900px) {
   .work-text-align {

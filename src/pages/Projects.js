@@ -71,7 +71,7 @@ function Projects() {
         </Button>
       </Box>
 
-      <Box sx={{ width: '90%' }}>
+      <Box sx={{ width: '90%', maxWidth: '1400px' }}>
         {project === 0 ? <ProjectsSmall /> : <ProjectsLarge />}
       </Box>
     </Box>

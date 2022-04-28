@@ -57,7 +57,7 @@ function About() {
         sx={{
           padding: '0 0 50px 0',
           textAlign: 'center',
-          maxWidth: '80%',
+          maxWidth: '900px',
         }}
       >
         Computer Science graduate with passion to begin pursuing a lifelong
@@ -69,7 +69,7 @@ function About() {
       <Typography
         variant='h6'
         sx={{
-          padding: '0 0 20px 0',
+          padding: '0 0 40px 0',
           color: '#88C0D0',
         }}
       >

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { Divider } from '@mui/material';
@@ -23,6 +23,13 @@ import {
 
 function BurgerMenu() {
   const [open, setOpen] = useState(false);
+  // using state to store the id of the nav links from Data.js
+  const [value, setValue] = useState(0);
+
+  // using useEffect to set the value of the state to "1" on page load. This sets the
+  useEffect(() => {
+    setValue(1);
+  }, []);
 
   return (
     <div>
@@ -44,15 +51,15 @@ function BurgerMenu() {
 
       {/* Swipeable drawer when the hamburger menu is opened  */}
       <SwipeableDrawer
-        open={open}
         anchor='right'
+        open={open}
         onOpen={() => setOpen(true)}
         onClose={() => setOpen(false)}
         sx={{ zIndex: '2200' }}
         PaperProps={{
           sx: {
             backgroundColor: '#2e3440',
-            width: '40vw',
+            width: '50vw',
           },
         }}
       >
@@ -75,24 +82,24 @@ function BurgerMenu() {
         {/* Links mapped though to list on the drawer.
               Using <List> and <ListItem> to automatically add padding to the links. It also lists them on top of each other
           */}
-        <List>
+        <List className='navlink-mobile-list'>
           {links.map((link) => {
             return (
               <Link
                 href={link.url}
                 key={link.id}
-                sx={{
-                  textDecoration: 'none',
-                  color: '#eceff4',
+                className='navlink-mobile-link'
+                // on click the state is given the value of "link.id"
+                onClick={() => {
+                  setValue(link.id);
+                  console.log(value);
                 }}
               >
                 <ListItem
-                  sx={{
-                    padding: '20px',
-                    '&:hover': {
-                      backgroundColor: '#444444',
-                    },
-                  }}
+                  // This gives the active nav link a different css class to reflect its active.
+                  className={`navlink-mobile-listitem ${
+                    link.id === value && 'navlink-mobile-listitem-active'
+                  }`}
                 >
                   {link.text === 'Home' && (
                     <ListItemIcon>

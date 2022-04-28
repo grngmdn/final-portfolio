@@ -44,9 +44,11 @@ function Work() {
       sx={{
         // border: 'solid',
         paddingBottom: '80px',
+        display: 'flex',
+        justifyContent: 'center',
       }}
     >
-      <Grid container spacing={1}>
+      <Grid container spacing={1} sx={{ maxWidth: '1400px' }}>
         <Grid item xs={12}>
           <Box
             sx={{
@@ -63,14 +65,7 @@ function Work() {
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Box
-            sx={
-              {
-                // border: 'solid',
-              }
-            }
-            className='work-text-align'
-          >
+          <Box className='work-text-align'>
             <Typography sx={{ color: '#9e9e9e' }}>Most recent</Typography>
           </Box>
         </Grid>
