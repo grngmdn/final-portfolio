@@ -91,6 +91,7 @@ function BurgerMenu() {
                 className='navlink-mobile-link'
                 // on click the state is given the value of "link.id"
                 onClick={() => {
+                  setOpen(false);
                   setValue(link.id);
                   console.log(value);
                 }}

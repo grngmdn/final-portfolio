@@ -5,7 +5,14 @@ import { links } from './Data';
 import logo from '../img/logo.png';
 import BurgerMenu from '../component/BurgerMenu';
 
-function Nav() {
+function Nav({
+  homeVisible,
+  aboutVisible,
+  workVisible,
+  projectsVisible,
+  educationVisible,
+  contactVisible,
+}) {
   // using state to store the id of the nav links from Data.js
   const [value, setValue] = useState(0);
 
@@ -54,14 +61,31 @@ function Nav() {
               <Link
                 href={link.url}
                 key={link.id}
-                // on click the state is given the value of "link.id"
-                onClick={() => {
-                  setValue(link.id);
-                  console.log(value);
-                }}
-                // This gives the active nav link a different css class to reflect its active.
+                // css styles are given to button based on which html section the user is currently on (using intersection observer).
                 className={`navlink-links ${
-                  link.id === value && 'navlink-links-active'
+                  (link.text === 'Home') & homeVisible
+                    ? 'navlink-links-active'
+                    : null
+                } ${
+                  (link.text === 'About') & aboutVisible
+                    ? 'navlink-links-active'
+                    : null
+                } ${
+                  (link.text === 'Work') & workVisible
+                    ? 'navlink-links-active'
+                    : null
+                } ${
+                  (link.text === 'Projects') & projectsVisible
+                    ? 'navlink-links-active'
+                    : null
+                } ${
+                  (link.text === 'Education') & educationVisible
+                    ? 'navlink-links-active'
+                    : null
+                } ${
+                  (link.text === 'Contact') & contactVisible
+                    ? 'navlink-links-active'
+                    : null
                 }`}
               >
                 {link.text}

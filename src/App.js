@@ -3,13 +3,43 @@ import Footer from './layout/Footer';
 import Nav from './layout/Nav';
 import { Home, About, Work, Projects, Education, Contact } from './pages';
 import BackToTopButton from './component/BackToTopButton';
+import { useInView } from 'react-intersection-observer';
 
 function App() {
+  // initializing intersection observer
+  // each html sections have their own ref
+  const { ref: homeRef, inView: homeVisible } = useInView({
+    threshold: 0.3,
+  });
+  const { ref: aboutRef, inView: aboutVisible } = useInView({
+    threshold: 0.5,
+  });
+  const { ref: workRef, inView: workVisible } = useInView({
+    threshold: 0.5,
+  });
+  const { ref: projectsRef, inView: projectsVisible } = useInView({
+    threshold: 0.5,
+  });
+  const { ref: educationRef, inView: educationVisible } = useInView({
+    threshold: 0.8,
+  });
+  const { ref: contactRef, inView: contactVisible } = useInView({
+    threshold: 0.8,
+  });
+
   return (
     <div>
-      <Nav />
+      {/* inView props from intersection observer is passed down to nav component  */}
+      <Nav
+        homeVisible={homeVisible}
+        aboutVisible={aboutVisible}
+        workVisible={workVisible}
+        projectsVisible={projectsVisible}
+        educationVisible={educationVisible}
+        contactVisible={contactVisible}
+      />
       <BackToTopButton />
-      <section id='home' style={{ position: 'relative' }}>
+      <section ref={homeRef} id='home' style={{ position: 'relative' }}>
         <Home />
         <div class='custom-shape-divider-bottom-1648784775'>
           <svg
@@ -25,7 +55,7 @@ function App() {
           </svg>
         </div>
       </section>
-      <section id='about' style={{ position: 'relative' }}>
+      <section ref={aboutRef} id='about' style={{ position: 'relative' }}>
         <div>
           <About />
           <div class='custom-shape-divider-bottom-1648782302'>
@@ -43,7 +73,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='work' style={{ position: 'relative' }}>
+      <section ref={workRef} id='work' style={{ position: 'relative' }}>
         <Work />
         <div class='custom-shape-divider-bottom-1649639648'>
           <svg
@@ -59,7 +89,7 @@ function App() {
           </svg>
         </div>
       </section>
-      <section id='projects' style={{ position: 'relative' }}>
+      <section ref={projectsRef} id='projects' style={{ position: 'relative' }}>
         <Projects />
         <div class='custom-shape-divider-bottom-1649646734'>
           <svg
@@ -75,7 +105,11 @@ function App() {
           </svg>
         </div>
       </section>
-      <section id='education' style={{ position: 'relative' }}>
+      <section
+        ref={educationRef}
+        id='education'
+        style={{ position: 'relative' }}
+      >
         <Education />
         <div class='custom-shape-divider-bottom-1648873246'>
           <svg
@@ -91,7 +125,7 @@ function App() {
           </svg>
         </div>
       </section>
-      <section id='contact' style={{ position: 'relative' }}>
+      <section ref={contactRef} id='contact' style={{ position: 'relative' }}>
         <Contact />
         <div class='custom-shape-divider-bottom-1648872746'>
           <svg
