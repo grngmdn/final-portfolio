@@ -8,13 +8,13 @@ function Home() {
     <Box
       sx={{
         height: '95vh',
-        width: '100vw',
+        width: '100%',
         backgroundColor: '#2e3440',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // border: "solid"
+        // border: 'solid green',
       }}
     >
       <Typography variant='h5' sx={{ padding: '0px 0 10px 0' }}>

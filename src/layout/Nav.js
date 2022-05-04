@@ -1,6 +1,6 @@
 import { Link } from '@mui/material';
 import { Box } from '@mui/system';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { links } from './Data';
 import logo from '../img/logo.png';
 import BurgerMenu from '../component/BurgerMenu';
@@ -13,14 +13,6 @@ function Nav({
   educationVisible,
   contactVisible,
 }) {
-  // using state to store the id of the nav links from Data.js
-  const [value, setValue] = useState(0);
-
-  // using useEffect to set the value of the state to "1" on page load. This sets the
-  useEffect(() => {
-    setValue(1);
-  }, []);
-
   return (
     <nav className='sticky navbar'>
       <Box
@@ -36,7 +28,7 @@ function Nav({
         {/* Website logo  */}
         <Box
           sx={{
-            marginLeft: '30px',
+            marginLeft: '50px',
             // border: 'solid red',
             display: 'flex',
             flexGrow: '1',

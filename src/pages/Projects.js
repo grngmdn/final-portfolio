@@ -20,8 +20,6 @@ function Projects() {
   return (
     <Box
       sx={{
-        // maxHeight: '100vh',
-        // height: '200vh',
         width: '100vw',
         backgroundColor: '#292E39',
         padding: '50px 0 100px 0',
@@ -30,7 +28,6 @@ function Projects() {
         // justifyContent: "center",
         alignItems: 'center',
         // border: 'solid',
-        // overflow: 'hidden',
       }}
     >
       {/* Heading  */}

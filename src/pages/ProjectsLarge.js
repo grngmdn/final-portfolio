@@ -10,11 +10,20 @@ function ProjectsLarge() {
     <div className='project-container'>
       {filteredData.map((data) => {
         return (
-          <div key={data.id} className='project-img-container'>
+          <div className='project-img-container container'>
             <a href={data.url} target='_blank' rel='noopener noreferrer'>
-              <img alt='large project thumbnail' src={data.img} width='400px' />
+              <div key={data.id} className='project-img-block'>
+                <img
+                  alt='large project thumbnail'
+                  src={data.img}
+                  className='project-img'
+                />
+              </div>
               <div className='text-bar'>
-                <h2>{data.text}</h2>
+                <p>{data.text}</p>
+              </div>
+              <div class='overlay'>
+                <div class='text'>Hello World</div>
               </div>
             </a>
           </div>

@@ -21,6 +21,10 @@ Leaves padding on top so the navigation does not cover the content  */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5vh;
+  // border: solid red;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -43,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   // border: solid;
+  width: 100%;
 }
 
 // styling navigation links on larger screen
@@ -102,6 +107,7 @@ body {
   background-size: cover;
 }
 
+// Projects container with images and heading
 .project-container {
   // border: solid;
   width: 100%;
@@ -111,26 +117,67 @@ body {
 }
 
 .project-img-container {
-  height: 300px;
-  border: solid;
-  width: 500px;
+  height: auto;
+  // border: solid red;
+  width: 300px;
   margin: 10px;
-}
-
-// underline design for the page titles
-.text-bar {
-  height: 55px;
-  width: 400px;
-  background-color: $white-font;
-  /* border: solid; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-img-container a {
   text-decoration: none;
   color: black;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+}
+
+// overlay hover text in the image
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+// underline design for the page titles
+.text-bar {
+  height: 20%;
+  width: 100%;
+  background-color: $white-font;
+  color: $dark-grey;
+  // border: solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-line {
