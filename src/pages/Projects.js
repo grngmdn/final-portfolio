@@ -20,7 +20,7 @@ function Projects() {
   return (
     <Box
       sx={{
-        width: '100vw',
+        width: '100%',
         backgroundColor: '#292E39',
         padding: '50px 0 100px 0',
         display: 'flex',

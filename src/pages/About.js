@@ -26,7 +26,7 @@ function About() {
   return (
     <Box
       sx={{
-        width: '100vw',
+        width: '100%',
         backgroundColor: '#292E39',
         display: 'flex',
         flexDirection: 'column',
