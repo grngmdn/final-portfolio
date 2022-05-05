@@ -22,9 +22,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5vh;
   // border: solid red;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+  // height: 100%;
+  // width: 100%;
+  // overflow-x: hidden;
 }
 
 body {
@@ -110,6 +110,7 @@ body {
 // Projects container with images and heading
 .project-container {
   // border: solid;
+  height: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -119,8 +120,9 @@ body {
 .project-img-container {
   height: auto;
   // border: solid red;
-  width: 300px;
-  margin: 10px;
+  width: 350px;
+  height: 200px;
+  margin: 40px;
 }
 
 .project-img-container a {
@@ -133,7 +135,7 @@ body {
   width: 100%;
 }
 
-// overlay hover text in the image
+// overlay hover text in the image - project page
 
 .container {
   position: relative;
@@ -144,7 +146,7 @@ body {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #008cba;
+  background-color: $blue-main;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -158,7 +160,7 @@ body {
 
 .text {
   white-space: nowrap;
-  color: white;
+  color: $white-font;
   font-size: 20px;
   position: absolute;
   overflow: hidden;

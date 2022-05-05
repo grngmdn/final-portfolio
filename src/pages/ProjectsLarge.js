@@ -23,7 +23,7 @@ function ProjectsLarge() {
                 <p>{data.text}</p>
               </div>
               <div class='overlay'>
-                <div class='text'>Hello World</div>
+                <div class='text'>{data.text}</div>
               </div>
             </a>
           </div>
