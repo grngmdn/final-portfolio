@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import { projectData } from './ProjectData';
 import { FaReact, FaBootstrap } from 'react-icons/fa';
-import { SiMaterialui, SiCss3 } from 'react-icons/si';
+import { SiMaterialui } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
 
