@@ -5,7 +5,13 @@ export const projectData = [
     url: 'https://react-projects-1-birthday-reminder.netlify.app/',
     type: 'small',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 2,
@@ -13,7 +19,13 @@ export const projectData = [
     url: 'https://react-projects-2-tours.netlify.app/',
     type: 'small',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 3,
@@ -21,7 +33,13 @@ export const projectData = [
     url: 'https://react-projects-3-reviews.netlify.app/',
     type: 'small',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 4,
@@ -29,7 +47,13 @@ export const projectData = [
     url: 'https://react-projects-4-accordion.netlify.app/',
     type: 'small',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 5,
@@ -37,7 +61,13 @@ export const projectData = [
     url: 'https://react-projects-4-accordion.netlify.app/',
     type: 'small',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 5,
@@ -45,7 +75,13 @@ export const projectData = [
     url: 'https://react-projects-5-menu.netlify.app/',
     type: 'large',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 6,
@@ -53,7 +89,13 @@ export const projectData = [
     url: 'https://react-projects-6-tabs.netlify.app/',
     type: 'large',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
   {
     id: 7,
@@ -61,6 +103,12 @@ export const projectData = [
     url: 'https://react-projects-6-tabs.netlify.app/',
     type: 'large',
     img: 'https://i.imgur.com/BhmK1iR.jpg',
-    description: '',
+    description: 'App to display birthday reminder',
+    tech: {
+      html: 'html',
+      css: 'css',
+      react: 'react',
+      mui: 'mui',
+    },
   },
 ];

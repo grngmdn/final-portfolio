@@ -41,13 +41,14 @@ body {
 }
 
 .navbar {
-  height: 8vh;
+  height: 5vh;
   background-color: $dark-grey;
   display: flex;
   justify-content: center;
   align-items: center;
   // border: solid;
   width: 100%;
+  opacity: 0.99;
 }
 
 // styling navigation links on larger screen
@@ -168,6 +169,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 // underline design for the page titles

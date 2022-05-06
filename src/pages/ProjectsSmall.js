@@ -1,5 +1,11 @@
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
 import { projectData } from './ProjectData';
+import { FaReact, FaBootstrap } from 'react-icons/fa';
+import { SiMaterialui, SiCss3 } from 'react-icons/si';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiCss3 } from 'react-icons/di';
 
 function ProjectsSmall() {
   const filteredData = projectData.filter((data) => {
@@ -23,7 +29,21 @@ function ProjectsSmall() {
                 <p>{data.text}</p>
               </div>
               <div class='overlay'>
-                <div class='text'>{data.text}</div>
+                <div class='text'>
+                  <div>
+                    <Typography variant='h6'>{data.description}</Typography>
+                  </div>
+                  <Box mt={1}>
+                    <Typography variant='overline'>technology used:</Typography>
+                    <Box>
+                      {data.tech.html === 'html' && <AiFillHtml5 />}
+                      {data.tech.css === 'css' && <DiCss3 />}
+                      {data.tech.react === 'react' && <FaReact />}
+                      {data.tech.mui === 'mui' && <SiMaterialui />}
+                      {data.tech.bootstrap === 'bootstrap' && <FaBootstrap />}
+                    </Box>
+                  </Box>
+                </div>
               </div>
             </a>
           </div>
