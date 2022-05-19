@@ -14,9 +14,9 @@ function ProjectsSmall() {
 
   return (
     <div className='project-container'>
-      {filteredData.map((data) => {
+      {filteredData.map((data, index) => {
         return (
-          <div className='project-img-container container'>
+          <div key={index} className='project-img-container container'>
             <a href={data.url} target='_blank' rel='noopener noreferrer'>
               <div key={data.id} className='project-img-block'>
                 <img
@@ -28,8 +28,8 @@ function ProjectsSmall() {
               <div className='text-bar'>
                 <p>{data.text}</p>
               </div>
-              <div class='overlay'>
-                <div class='text'>
+              <div className='overlay'>
+                <div className='text'>
                   <div>
                     <Typography variant='h6'>{data.description}</Typography>
                   </div>

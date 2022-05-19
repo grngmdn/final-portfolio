@@ -65,9 +65,9 @@ function BurgerMenu() {
       >
         {/* Right arrow button to close the swipeable menu drawer  */}
         <Box>
-          <IconButton>
+          <IconButton onClick={() => setOpen(false)}>
             <ChevronRightIcon
-              onClick={() => setOpen(false)}
+              // onClick={() => setOpen(false)}
               sx={{
                 color: '#eceff4',
                 fontSize: '30px',

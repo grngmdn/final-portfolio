@@ -55,29 +55,21 @@ function Nav({
                 key={link.id}
                 // css styles are given to button based on which html section the user is currently on (using intersection observer).
                 className={`navlink-links ${
-                  (link.text === 'Home') & homeVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'Home') & homeVisible && 'navlink-links-active'
                 } ${
-                  (link.text === 'About') & aboutVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'About') & aboutVisible &&
+                  'navlink-links-active'
                 } ${
-                  (link.text === 'Work') & workVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'Work') & workVisible && 'navlink-links-active'
                 } ${
-                  (link.text === 'Projects') & projectsVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'Projects') & projectsVisible &&
+                  'navlink-links-active'
                 } ${
-                  (link.text === 'Education') & educationVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'Education') & educationVisible &&
+                  'navlink-links-active'
                 } ${
-                  (link.text === 'Contact') & contactVisible
-                    ? 'navlink-links-active'
-                    : null
+                  (link.text === 'Contact') & contactVisible &&
+                  'navlink-links-active'
                 }`}
               >
                 {link.text}

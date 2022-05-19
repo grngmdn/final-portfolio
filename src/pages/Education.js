@@ -38,9 +38,9 @@ function Education() {
           <Box className='underline-education'></Box>
         </Box>
 
-        {education.map((education) => {
+        {education.map((education, index) => {
           return (
-            <Grid container spacing={0.5}>
+            <Grid key={index} container spacing={0.5}>
               <Grid item xs={12} md={5}>
                 <Box className='work-text-align'>
                   <Typography sx={{ color: '#9e9e9e' }}>
